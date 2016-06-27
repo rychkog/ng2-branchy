@@ -268,7 +268,7 @@ webpackJsonp([0],[
 	        }
 	    };
 	    __decorate([
-	        core_1.Input('model'), 
+	        core_1.Input(), 
 	        __metadata('design:type', Object)
 	    ], TreeComponent.prototype, "tree", void 0);
 	    __decorate([
@@ -326,7 +326,7 @@ webpackJsonp([0],[
 	        });
 	    };
 	    __decorate([
-	        core_1.Input('model'), 
+	        core_1.Input(), 
 	        __metadata('design:type', Object)
 	    ], BranchyComponent.prototype, "tree", void 0);
 	    __decorate([
@@ -353,7 +353,7 @@ webpackJsonp([0],[
 	        core_1.Component({
 	            selector: 'branchy',
 	            providers: [node_menu_service_1.NodeMenuService, node_draggable_service_1.NodeDraggableService, branchy_service_1.BranchyService],
-	            template: "<tree [model]=\"tree\"></tree>",
+	            template: "<tree [tree]=\"tree\"></tree>",
 	            directives: [TreeComponent]
 	        }),
 	        __param(0, core_1.Inject(branchy_service_1.BranchyService)), 
@@ -13630,7 +13630,7 @@ webpackJsonp([0],[
 /* 449 */
 /***/ function(module, exports) {
 
-	module.exports = "<ul class=\"tree\" *ngIf=\"tree\">\n  <li>\n    <div (contextmenu)=\"showMenu($event)\" [nodeDraggable]=\"element\" [tree]=\"tree\">\n      <div class=\"folding\" (click)=\"switchFoldingType($event, tree)\" [ngClass]=\"getFoldingTypeCssClass(tree)\"></div>\n      <div href=\"#\" class=\"node-value\" *ngIf=\"!isEditInProgress()\" [class.node-selected]=\"isSelected\" (click)=\"onNodeSelected($event)\">{{tree.value}}</div>\n\n      <input type=\"text\" class=\"node-value\" *ngIf=\"isEditInProgress()\"\n             [nodeEditable]=\"tree.value\"\n             (valueChanged)=\"applyNewValue($event, tree)\"/>\n    </div>\n\n    <node-menu *ngIf=\"isMenuVisible\" (menuItemSelected)=\"onMenuItemSelected($event)\"></node-menu>\n\n    <template [ngIf]=\"isNodeExpanded()\">\n      <tree *ngFor=\"let child of tree.children; let position = index\"\n            [parentTree]=\"tree\"\n            [indexInParent]=\"position\"\n            [model]=\"child\"\n            (nodeRemoved)=\"onChildRemoved($event)\"></tree>\n    </template>\n  </li>\n</ul>\n"
+	module.exports = "<ul class=\"tree\" *ngIf=\"tree\">\n  <li>\n    <div (contextmenu)=\"showMenu($event)\" [nodeDraggable]=\"element\" [tree]=\"tree\">\n      <div class=\"folding\" (click)=\"switchFoldingType($event, tree)\" [ngClass]=\"getFoldingTypeCssClass(tree)\"></div>\n      <div href=\"#\" class=\"node-value\" *ngIf=\"!isEditInProgress()\" [class.node-selected]=\"isSelected\" (click)=\"onNodeSelected($event)\">{{tree.value}}</div>\n\n      <input type=\"text\" class=\"node-value\" *ngIf=\"isEditInProgress()\"\n             [nodeEditable]=\"tree.value\"\n             (valueChanged)=\"applyNewValue($event, tree)\"/>\n    </div>\n\n    <node-menu *ngIf=\"isMenuVisible\" (menuItemSelected)=\"onMenuItemSelected($event)\"></node-menu>\n\n    <template [ngIf]=\"isNodeExpanded()\">\n      <tree *ngFor=\"let child of tree.children; let position = index\"\n            [parentTree]=\"tree\"\n            [indexInParent]=\"position\"\n            [tree]=\"child\"\n            (nodeRemoved)=\"onChildRemoved($event)\"></tree>\n    </template>\n  </li>\n</ul>\n"
 
 /***/ },
 /* 450 */
@@ -13649,9 +13649,9 @@ webpackJsonp([0],[
 	var platform_browser_dynamic_1 = __webpack_require__(451);
 	var core_1 = __webpack_require__(3);
 	var index_1 = __webpack_require__(1);
-	var App = (function () {
-	    function App() {
-	        this.tree = {
+	var AppComponent = (function () {
+	    function AppComponent() {
+	        this.fonts = {
 	            value: 'Fonts',
 	            children: [
 	                {
@@ -13697,7 +13697,7 @@ webpackJsonp([0],[
 	                }
 	            ]
 	        };
-	        this.tree2 = {
+	        this.pls = {
 	            value: 'Programming languages by programming paradigm',
 	            children: [
 	                {
@@ -13712,12 +13712,12 @@ webpackJsonp([0],[
 	                    children: [
 	                        {
 	                            value: {
-	                                id: 'Java',
+	                                name: 'Java',
 	                                setName: function (name) {
-	                                    this.id = name;
+	                                    this.name = name;
 	                                },
 	                                toString: function () {
-	                                    return this.id;
+	                                    return this.name;
 	                                }
 	                            }
 	                        },
@@ -13736,21 +13736,197 @@ webpackJsonp([0],[
 	            ]
 	        };
 	    }
-	    App.prototype.logEvent = function (event) {
-	        console.log(event);
+	    AppComponent.prototype.onNodeRemoved = function (e) {
+	        this.logEvent(e, 'Removed');
 	    };
-	    App = __decorate([
+	    AppComponent.prototype.onNodeMoved = function (e) {
+	        this.logEvent(e, 'Moved');
+	    };
+	    AppComponent.prototype.onNodeRenamed = function (e) {
+	        this.logEvent(e, 'Renamed');
+	    };
+	    AppComponent.prototype.onNodeCreated = function (e) {
+	        this.logEvent(e, 'Created');
+	    };
+	    AppComponent.prototype.onNodeSelected = function (e) {
+	        this.logEvent(e, 'Selected');
+	    };
+	    AppComponent.prototype.logEvent = function (e, message) {
+	        console.log(e);
+	        alertify.message(message + ": " + e.node.value);
+	    };
+	    AppComponent = __decorate([
 	        core_1.Component({
 	            selector: 'app',
-	            template: "\n    <branchy \n      [model]=\"tree\" \n      (nodeRemoved)=\"logEvent($event)\"\n      (nodeRenamed)=\"logEvent($event)\"\n      (nodeSelected)=\"logEvent($event)\"\n      (nodeMoved)=\"logEvent($event)\"\n      (nodeCreated)=\"logEvent($event)\">\n    </branchy>\n\n    <branchy \n      [model]=\"tree2\" \n      (nodeRemoved)=\"logEvent($event)\"\n      (nodeRenamed)=\"logEvent($event)\"\n      (nodeSelected)=\"logEvent($event)\"\n      (nodeMoved)=\"logEvent($event)\"\n      (nodeCreated)=\"logEvent($event)\">\n    </branchy>\n    ",
+	            template: "\n    <div class=\"branchy-demo-app\">\n      <div class=\"branchy-container\">\n        <p>Branchy fonts</p>\n        <branchy\n          [tree]=\"fonts\" \n          (nodeRemoved)=\"onNodeRemoved($event)\"\n          (nodeRenamed)=\"onNodeRenamed($event)\"\n          (nodeSelected)=\"onNodeSelected($event)\"\n          (nodeMoved)=\"onNodeMoved($event)\"\n          (nodeCreated)=\"onNodeCreated($event)\">\n        </branchy>\n      </div>\n      <div class=\"branchy-container\">\n        <p>Branchy programming languages</p>\n        <branchy \n          [tree]=\"pls\" \n          (nodeRemoved)=\"onNodeRemoved($event)\"\n          (nodeRenamed)=\"onNodeRenamed($event)\"\n          (nodeSelected)=\"onNodeSelected($event)\"\n          (nodeMoved)=\"onNodeMoved($event)\"\n          (nodeCreated)=\"onNodeCreated($event)\">\n        </branchy>\n      </div>\n    </div>\n    ",
+	            styles: [__webpack_require__(604)],
 	            directives: [index_1.BranchyComponent]
 	        }), 
 	        __metadata('design:paramtypes', [])
-	    ], App);
-	    return App;
+	    ], AppComponent);
+	    return AppComponent;
 	}());
-	platform_browser_dynamic_1.bootstrap(App);
+	platform_browser_dynamic_1.bootstrap(AppComponent);
 
+
+/***/ },
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */,
+/* 486 */,
+/* 487 */,
+/* 488 */,
+/* 489 */,
+/* 490 */,
+/* 491 */,
+/* 492 */,
+/* 493 */,
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */,
+/* 502 */,
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */,
+/* 507 */,
+/* 508 */,
+/* 509 */,
+/* 510 */,
+/* 511 */,
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */,
+/* 517 */,
+/* 518 */,
+/* 519 */,
+/* 520 */,
+/* 521 */,
+/* 522 */,
+/* 523 */,
+/* 524 */,
+/* 525 */,
+/* 526 */,
+/* 527 */,
+/* 528 */,
+/* 529 */,
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */,
+/* 535 */,
+/* 536 */,
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */,
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */,
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */,
+/* 566 */,
+/* 567 */,
+/* 568 */,
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */,
+/* 573 */,
+/* 574 */,
+/* 575 */,
+/* 576 */,
+/* 577 */,
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */,
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
+/* 604 */
+/***/ function(module, exports) {
+
+	module.exports = ".branchy-demo-app {\n  margin: auto;\n  width: -moz-fit-content;\n  width: -webkit-fit-content;\n  width: fit-content;\n}\n.branchy-demo-app .branchy-container {\n  display: inline-block;\n  vertical-align: top;\n  width: 500px;\n}\n.branchy-demo-app .branchy-container p {\n  color: #40a070;\n  font-size: 2em;\n}\n"
 
 /***/ }
 ]);
