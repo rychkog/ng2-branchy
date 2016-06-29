@@ -15,7 +15,6 @@ webpackJsonp([0],[
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	__export(__webpack_require__(2));
-	__export(__webpack_require__(174));
 
 
 /***/ },
@@ -596,18 +595,14 @@ webpackJsonp([0],[
 	        this.renderer.setElementProperty(nativeElement, 'value', this.nodeValue);
 	    };
 	    NodeEditableDirective.prototype.applyNewValue = function (newNodeValue) {
-	        return this.valueChanged.emit({ type: 'keyup', value: newNodeValue });
+	        this.valueChanged.emit({ type: 'keyup', value: newNodeValue });
+	    };
+	    NodeEditableDirective.prototype.applyNewValueByLoosingFocus = function (newNodeValue) {
+	        this.valueChanged.emit({ type: 'blur', value: newNodeValue });
 	    };
 	    NodeEditableDirective.prototype.cancelEditing = function () {
-	        return this.valueChanged.emit({
-	            type: 'keyup',
-	            value: this.nodeValue,
-	            action: editable_type_1.NodeEditableEventAction.Cancel
-	        });
-	    };
-	    NodeEditableDirective.prototype.cancelEditingByLoosingFocus = function () {
 	        this.valueChanged.emit({
-	            type: 'blur',
+	            type: 'keyup',
 	            value: this.nodeValue,
 	            action: editable_type_1.NodeEditableEventAction.Cancel
 	        });
@@ -627,17 +622,17 @@ webpackJsonp([0],[
 	        __metadata('design:returntype', void 0)
 	    ], NodeEditableDirective.prototype, "applyNewValue", null);
 	    __decorate([
+	        core_1.HostListener('blur', ['$event.target.value']), 
+	        __metadata('design:type', Function), 
+	        __metadata('design:paramtypes', [String]), 
+	        __metadata('design:returntype', void 0)
+	    ], NodeEditableDirective.prototype, "applyNewValueByLoosingFocus", null);
+	    __decorate([
 	        core_1.HostListener('keyup.esc'), 
 	        __metadata('design:type', Function), 
 	        __metadata('design:paramtypes', []), 
 	        __metadata('design:returntype', void 0)
 	    ], NodeEditableDirective.prototype, "cancelEditing", null);
-	    __decorate([
-	        core_1.HostListener('blur'), 
-	        __metadata('design:type', Function), 
-	        __metadata('design:paramtypes', []), 
-	        __metadata('design:returntype', void 0)
-	    ], NodeEditableDirective.prototype, "cancelEditingByLoosingFocus", null);
 	    NodeEditableDirective = __decorate([
 	        core_1.Directive({
 	            selector: '[nodeEditable]'
