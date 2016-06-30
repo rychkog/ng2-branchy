@@ -13921,7 +13921,7 @@ webpackJsonp([0],[
 /* 604 */
 /***/ function(module, exports) {
 
-	module.exports = ".branchy-demo-app {\n  margin: auto;\n  width: -moz-fit-content;\n  width: -webkit-fit-content;\n  width: fit-content;\n}\n.branchy-demo-app .branchy-container {\n  display: inline-block;\n  vertical-align: top;\n  width: 500px;\n}\n.branchy-demo-app .branchy-container p {\n  color: #40a070;\n  font-size: 2em;\n}\n"
+	module.exports = ".branchy-demo-app {\n  margin: auto;\n  width: -moz-fit-content;\n  width: -webkit-fit-content;\n  width: fit-content;\n}\n.branchy-demo-app .branchy-container {\n  float: left;\n  vertical-align: top;\n  width: 500px;\n}\n.branchy-demo-app .branchy-container p {\n  color: #40a070;\n  font-size: 2em;\n}\n"
 
 /***/ }
 ]);
