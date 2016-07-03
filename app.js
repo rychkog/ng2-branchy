@@ -3,7 +3,7 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	module.exports = __webpack_require__(450);
+	module.exports = __webpack_require__(453);
 
 
 /***/ },
@@ -11,10 +11,8 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	__export(__webpack_require__(2));
+	var branchy_component_1 = __webpack_require__(2);
+	exports.BranchyComponent = branchy_component_1.BranchyComponent;
 
 
 /***/ },
@@ -35,20 +33,20 @@ webpackJsonp([0],[
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
-	var common_1 = __webpack_require__(111);
-	var branchy_types_1 = __webpack_require__(174);
-	var node_editable_directive_1 = __webpack_require__(175);
-	var node_menu_component_1 = __webpack_require__(177);
-	var node_draggable_service_1 = __webpack_require__(440);
-	var node_menu_service_1 = __webpack_require__(178);
-	var node_draggable_directive_1 = __webpack_require__(441);
-	var draggable_types_1 = __webpack_require__(443);
-	var menu_types_1 = __webpack_require__(436);
-	var editable_type_1 = __webpack_require__(176);
-	var branchy_service_1 = __webpack_require__(444);
-	var event_utils_1 = __webpack_require__(437);
-	var _ = __webpack_require__(445);
-	var type_utils_1 = __webpack_require__(446);
+	var common_1 = __webpack_require__(113);
+	var branchy_types_1 = __webpack_require__(177);
+	var node_editable_directive_1 = __webpack_require__(178);
+	var node_menu_component_1 = __webpack_require__(180);
+	var node_draggable_service_1 = __webpack_require__(443);
+	var node_menu_service_1 = __webpack_require__(181);
+	var node_draggable_directive_1 = __webpack_require__(444);
+	var draggable_types_1 = __webpack_require__(446);
+	var menu_types_1 = __webpack_require__(439);
+	var editable_type_1 = __webpack_require__(179);
+	var branchy_service_1 = __webpack_require__(447);
+	var event_utils_1 = __webpack_require__(440);
+	var _ = __webpack_require__(448);
+	var type_utils_1 = __webpack_require__(449);
 	var TreeComponent = (function () {
 	    function TreeComponent(nodeMenuService, nodeDraggableService, branchyService, element) {
 	        this.nodeMenuService = nodeMenuService;
@@ -285,8 +283,8 @@ webpackJsonp([0],[
 	    TreeComponent = __decorate([
 	        core_1.Component({
 	            selector: 'tree',
-	            styles: [__webpack_require__(448)],
-	            template: __webpack_require__(449),
+	            styles: [__webpack_require__(451)],
+	            template: __webpack_require__(452),
 	            directives: [node_editable_directive_1.NodeEditableDirective, TreeComponent, node_menu_component_1.NodeMenuComponent, node_draggable_directive_1.NodeDraggableDirective, common_1.CORE_DIRECTIVES],
 	        }),
 	        __param(0, core_1.Inject(node_menu_service_1.NodeMenuService)),
@@ -535,7 +533,10 @@ webpackJsonp([0],[
 /* 171 */,
 /* 172 */,
 /* 173 */,
-/* 174 */
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -565,7 +566,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 175 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -582,7 +583,7 @@ webpackJsonp([0],[
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
-	var editable_type_1 = __webpack_require__(176);
+	var editable_type_1 = __webpack_require__(179);
 	var NodeEditableDirective = (function () {
 	    function NodeEditableDirective(renderer, elementRef) {
 	        this.renderer = renderer;
@@ -647,7 +648,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 176 */
+/* 179 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -658,7 +659,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 177 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -675,10 +676,10 @@ webpackJsonp([0],[
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
-	var common_1 = __webpack_require__(111);
-	var node_menu_service_1 = __webpack_require__(178);
-	var menu_types_1 = __webpack_require__(436);
-	var event_utils_1 = __webpack_require__(437);
+	var common_1 = __webpack_require__(113);
+	var node_menu_service_1 = __webpack_require__(181);
+	var menu_types_1 = __webpack_require__(439);
+	var event_utils_1 = __webpack_require__(440);
 	var NodeMenuComponent = (function () {
 	    function NodeMenuComponent(renderer, nodeMenuService) {
 	        this.renderer = renderer;
@@ -738,8 +739,8 @@ webpackJsonp([0],[
 	    NodeMenuComponent = __decorate([
 	        core_1.Component({
 	            selector: 'node-menu',
-	            styles: [__webpack_require__(438)],
-	            template: __webpack_require__(439),
+	            styles: [__webpack_require__(441)],
+	            template: __webpack_require__(442),
 	            directives: [common_1.CORE_DIRECTIVES]
 	        }),
 	        __param(0, core_1.Inject(core_1.Renderer)),
@@ -752,7 +753,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 178 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -766,7 +767,7 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var Rx_1 = __webpack_require__(179);
+	var Rx_1 = __webpack_require__(182);
 	var NodeMenuService = (function () {
 	    function NodeMenuService() {
 	        this.nodeMenuEvents$ = new Rx_1.Subject();
@@ -781,7 +782,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 179 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -796,142 +797,142 @@ webpackJsonp([0],[
 	exports.Observable = Observable_1.Observable;
 	// statics
 	/* tslint:disable:no-use-before-declare */
-	__webpack_require__(180);
-	__webpack_require__(184);
+	__webpack_require__(183);
 	__webpack_require__(187);
-	__webpack_require__(198);
-	__webpack_require__(202);
+	__webpack_require__(190);
+	__webpack_require__(201);
 	__webpack_require__(205);
-	__webpack_require__(207);
+	__webpack_require__(208);
 	__webpack_require__(210);
-	__webpack_require__(217);
+	__webpack_require__(213);
 	__webpack_require__(220);
 	__webpack_require__(223);
-	__webpack_require__(225);
-	__webpack_require__(234);
+	__webpack_require__(226);
+	__webpack_require__(228);
 	__webpack_require__(237);
-	__webpack_require__(239);
-	__webpack_require__(243);
-	__webpack_require__(245);
+	__webpack_require__(240);
+	__webpack_require__(242);
+	__webpack_require__(246);
 	__webpack_require__(248);
 	__webpack_require__(251);
-	__webpack_require__(255);
-	//operators
+	__webpack_require__(254);
 	__webpack_require__(258);
-	__webpack_require__(260);
-	__webpack_require__(262);
-	__webpack_require__(264);
-	__webpack_require__(266);
-	__webpack_require__(268);
-	__webpack_require__(275);
-	__webpack_require__(277);
-	__webpack_require__(279);
+	//operators
+	__webpack_require__(261);
+	__webpack_require__(263);
+	__webpack_require__(265);
+	__webpack_require__(267);
+	__webpack_require__(269);
+	__webpack_require__(271);
+	__webpack_require__(278);
 	__webpack_require__(280);
-	__webpack_require__(281);
+	__webpack_require__(282);
 	__webpack_require__(283);
+	__webpack_require__(284);
 	__webpack_require__(286);
 	__webpack_require__(289);
-	__webpack_require__(291);
-	__webpack_require__(293);
-	__webpack_require__(295);
-	__webpack_require__(297);
-	__webpack_require__(299);
-	__webpack_require__(301);
-	__webpack_require__(303);
-	__webpack_require__(305);
-	__webpack_require__(307);
-	__webpack_require__(309);
-	__webpack_require__(311);
-	__webpack_require__(313);
+	__webpack_require__(292);
+	__webpack_require__(294);
+	__webpack_require__(296);
+	__webpack_require__(298);
+	__webpack_require__(300);
+	__webpack_require__(302);
+	__webpack_require__(304);
+	__webpack_require__(306);
+	__webpack_require__(308);
+	__webpack_require__(310);
+	__webpack_require__(312);
+	__webpack_require__(314);
 	__webpack_require__(316);
-	__webpack_require__(321);
-	__webpack_require__(323);
-	__webpack_require__(325);
-	__webpack_require__(327);
-	__webpack_require__(329);
-	__webpack_require__(331);
-	__webpack_require__(333);
-	__webpack_require__(335);
-	__webpack_require__(337);
-	__webpack_require__(339);
+	__webpack_require__(319);
+	__webpack_require__(324);
+	__webpack_require__(326);
+	__webpack_require__(328);
+	__webpack_require__(330);
+	__webpack_require__(332);
+	__webpack_require__(334);
+	__webpack_require__(336);
+	__webpack_require__(338);
 	__webpack_require__(340);
-	__webpack_require__(341);
 	__webpack_require__(342);
 	__webpack_require__(343);
 	__webpack_require__(344);
 	__webpack_require__(345);
+	__webpack_require__(346);
+	__webpack_require__(347);
 	__webpack_require__(348);
-	__webpack_require__(350);
-	__webpack_require__(352);
+	__webpack_require__(351);
+	__webpack_require__(353);
 	__webpack_require__(355);
-	__webpack_require__(356);
 	__webpack_require__(358);
 	__webpack_require__(359);
 	__webpack_require__(361);
-	__webpack_require__(363);
-	__webpack_require__(365);
-	__webpack_require__(367);
-	__webpack_require__(369);
-	__webpack_require__(371);
-	__webpack_require__(373);
-	__webpack_require__(375);
-	__webpack_require__(377);
-	__webpack_require__(379);
-	__webpack_require__(381);
-	__webpack_require__(383);
-	__webpack_require__(385);
-	__webpack_require__(394);
-	__webpack_require__(396);
-	__webpack_require__(398);
-	__webpack_require__(400);
+	__webpack_require__(362);
+	__webpack_require__(364);
+	__webpack_require__(366);
+	__webpack_require__(368);
+	__webpack_require__(370);
+	__webpack_require__(372);
+	__webpack_require__(374);
+	__webpack_require__(376);
+	__webpack_require__(378);
+	__webpack_require__(380);
+	__webpack_require__(382);
+	__webpack_require__(384);
+	__webpack_require__(386);
+	__webpack_require__(388);
+	__webpack_require__(397);
+	__webpack_require__(399);
+	__webpack_require__(401);
 	__webpack_require__(403);
-	__webpack_require__(405);
-	__webpack_require__(407);
-	__webpack_require__(409);
-	__webpack_require__(411);
-	__webpack_require__(413);
-	__webpack_require__(415);
-	__webpack_require__(417);
-	__webpack_require__(419);
+	__webpack_require__(406);
+	__webpack_require__(408);
+	__webpack_require__(410);
+	__webpack_require__(412);
+	__webpack_require__(414);
+	__webpack_require__(416);
+	__webpack_require__(418);
 	__webpack_require__(420);
 	__webpack_require__(422);
-	__webpack_require__(424);
-	__webpack_require__(426);
-	__webpack_require__(428);
-	__webpack_require__(430);
-	__webpack_require__(432);
+	__webpack_require__(423);
+	__webpack_require__(425);
+	__webpack_require__(427);
+	__webpack_require__(429);
+	__webpack_require__(431);
 	__webpack_require__(433);
+	__webpack_require__(435);
+	__webpack_require__(436);
 	/* tslint:disable:no-unused-variable */
-	var Operator_1 = __webpack_require__(435);
+	var Operator_1 = __webpack_require__(438);
 	exports.Operator = Operator_1.Operator;
 	var Subscription_1 = __webpack_require__(43);
 	exports.Subscription = Subscription_1.Subscription;
 	var Subscriber_1 = __webpack_require__(41);
 	exports.Subscriber = Subscriber_1.Subscriber;
-	var AsyncSubject_1 = __webpack_require__(183);
+	var AsyncSubject_1 = __webpack_require__(186);
 	exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
-	var ReplaySubject_1 = __webpack_require__(271);
+	var ReplaySubject_1 = __webpack_require__(274);
 	exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
-	var BehaviorSubject_1 = __webpack_require__(354);
+	var BehaviorSubject_1 = __webpack_require__(357);
 	exports.BehaviorSubject = BehaviorSubject_1.BehaviorSubject;
-	var ConnectableObservable_1 = __webpack_require__(274);
+	var ConnectableObservable_1 = __webpack_require__(277);
 	exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
-	var Notification_1 = __webpack_require__(216);
+	var Notification_1 = __webpack_require__(219);
 	exports.Notification = Notification_1.Notification;
-	var EmptyError_1 = __webpack_require__(315);
+	var EmptyError_1 = __webpack_require__(318);
 	exports.EmptyError = EmptyError_1.EmptyError;
-	var ArgumentOutOfRangeError_1 = __webpack_require__(402);
+	var ArgumentOutOfRangeError_1 = __webpack_require__(405);
 	exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
 	var ObjectUnsubscribedError_1 = __webpack_require__(53);
 	exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
 	var UnsubscriptionError_1 = __webpack_require__(48);
 	exports.UnsubscriptionError = UnsubscriptionError_1.UnsubscriptionError;
-	var asap_1 = __webpack_require__(388);
-	var async_1 = __webpack_require__(229);
-	var queue_1 = __webpack_require__(272);
+	var asap_1 = __webpack_require__(391);
+	var async_1 = __webpack_require__(232);
+	var queue_1 = __webpack_require__(275);
 	var rxSubscriber_1 = __webpack_require__(49);
 	var observable_1 = __webpack_require__(39);
-	var iterator_1 = __webpack_require__(196);
+	var iterator_1 = __webpack_require__(199);
 	/* tslint:enable:no-unused-variable */
 	/**
 	 * @typedef {Object} Rx.Scheduler
@@ -972,26 +973,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=Rx.js.map
 
 /***/ },
-/* 180 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var bindCallback_1 = __webpack_require__(181);
+	var bindCallback_1 = __webpack_require__(184);
 	Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
 	//# sourceMappingURL=bindCallback.js.map
 
 /***/ },
-/* 181 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var BoundCallbackObservable_1 = __webpack_require__(182);
+	var BoundCallbackObservable_1 = __webpack_require__(185);
 	exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
 	//# sourceMappingURL=bindCallback.js.map
 
 /***/ },
-/* 182 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1003,7 +1004,7 @@ webpackJsonp([0],[
 	var Observable_1 = __webpack_require__(36);
 	var tryCatch_1 = __webpack_require__(46);
 	var errorObject_1 = __webpack_require__(47);
-	var AsyncSubject_1 = __webpack_require__(183);
+	var AsyncSubject_1 = __webpack_require__(186);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -1138,7 +1139,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=BoundCallbackObservable.js.map
 
 /***/ },
-/* 183 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1196,26 +1197,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=AsyncSubject.js.map
 
 /***/ },
-/* 184 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var bindNodeCallback_1 = __webpack_require__(185);
+	var bindNodeCallback_1 = __webpack_require__(188);
 	Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
 	//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
-/* 185 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var BoundNodeCallbackObservable_1 = __webpack_require__(186);
+	var BoundNodeCallbackObservable_1 = __webpack_require__(189);
 	exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
 	//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
-/* 186 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1227,7 +1228,7 @@ webpackJsonp([0],[
 	var Observable_1 = __webpack_require__(36);
 	var tryCatch_1 = __webpack_require__(46);
 	var errorObject_1 = __webpack_require__(47);
-	var AsyncSubject_1 = __webpack_require__(183);
+	var AsyncSubject_1 = __webpack_require__(186);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -1366,17 +1367,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=BoundNodeCallbackObservable.js.map
 
 /***/ },
-/* 187 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var combineLatest_1 = __webpack_require__(188);
+	var combineLatest_1 = __webpack_require__(191);
 	Observable_1.Observable.combineLatest = combineLatest_1.combineLatestStatic;
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
-/* 188 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1385,11 +1386,11 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var ArrayObservable_1 = __webpack_require__(189);
+	var ArrayObservable_1 = __webpack_require__(192);
 	var isArray_1 = __webpack_require__(44);
-	var isScheduler_1 = __webpack_require__(192);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var isScheduler_1 = __webpack_require__(195);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Combines multiple Observables to create an Observable whose values are
 	 * calculated from the latest values of each of its input Observables.
@@ -1566,7 +1567,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
-/* 189 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1576,9 +1577,9 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(36);
-	var ScalarObservable_1 = __webpack_require__(190);
-	var EmptyObservable_1 = __webpack_require__(191);
-	var isScheduler_1 = __webpack_require__(192);
+	var ScalarObservable_1 = __webpack_require__(193);
+	var EmptyObservable_1 = __webpack_require__(194);
+	var isScheduler_1 = __webpack_require__(195);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -1693,7 +1694,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=ArrayObservable.js.map
 
 /***/ },
-/* 190 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1753,7 +1754,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=ScalarObservable.js.map
 
 /***/ },
-/* 191 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1833,7 +1834,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=EmptyObservable.js.map
 
 /***/ },
-/* 192 */
+/* 195 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1844,7 +1845,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=isScheduler.js.map
 
 /***/ },
-/* 193 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1879,17 +1880,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=OuterSubscriber.js.map
 
 /***/ },
-/* 194 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var root_1 = __webpack_require__(37);
 	var isArray_1 = __webpack_require__(44);
-	var isPromise_1 = __webpack_require__(195);
+	var isPromise_1 = __webpack_require__(198);
 	var Observable_1 = __webpack_require__(36);
-	var iterator_1 = __webpack_require__(196);
+	var iterator_1 = __webpack_require__(199);
 	var observable_1 = __webpack_require__(39);
-	var InnerSubscriber_1 = __webpack_require__(197);
+	var InnerSubscriber_1 = __webpack_require__(200);
 	function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
 	    var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
 	    if (destination.isUnsubscribed) {
@@ -1955,7 +1956,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=subscribeToResult.js.map
 
 /***/ },
-/* 195 */
+/* 198 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1966,7 +1967,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=isPromise.js.map
 
 /***/ },
-/* 196 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2003,7 +2004,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=iterator.js.map
 
 /***/ },
-/* 197 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2044,32 +2045,32 @@ webpackJsonp([0],[
 	//# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ },
-/* 198 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var concat_1 = __webpack_require__(199);
+	var concat_1 = __webpack_require__(202);
 	Observable_1.Observable.concat = concat_1.concat;
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
-/* 199 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var concat_1 = __webpack_require__(200);
+	var concat_1 = __webpack_require__(203);
 	exports.concat = concat_1.concatStatic;
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
-/* 200 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var isScheduler_1 = __webpack_require__(192);
-	var ArrayObservable_1 = __webpack_require__(189);
-	var mergeAll_1 = __webpack_require__(201);
+	var isScheduler_1 = __webpack_require__(195);
+	var ArrayObservable_1 = __webpack_require__(192);
+	var mergeAll_1 = __webpack_require__(204);
 	/**
 	 * Creates an output Observable which sequentially emits all values from every
 	 * given input Observable after the current Observable.
@@ -2176,7 +2177,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
-/* 201 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2185,8 +2186,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Converts a higher-order Observable into a first-order Observable which
 	 * concurrently delivers all values that are emitted on the inner Observables.
@@ -2292,26 +2293,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=mergeAll.js.map
 
 /***/ },
-/* 202 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var defer_1 = __webpack_require__(203);
+	var defer_1 = __webpack_require__(206);
 	Observable_1.Observable.defer = defer_1.defer;
 	//# sourceMappingURL=defer.js.map
 
 /***/ },
-/* 203 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var DeferObservable_1 = __webpack_require__(204);
+	var DeferObservable_1 = __webpack_require__(207);
 	exports.defer = DeferObservable_1.DeferObservable.create;
 	//# sourceMappingURL=defer.js.map
 
 /***/ },
-/* 204 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2321,8 +2322,8 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(36);
-	var subscribeToResult_1 = __webpack_require__(194);
-	var OuterSubscriber_1 = __webpack_require__(193);
+	var subscribeToResult_1 = __webpack_require__(197);
+	var OuterSubscriber_1 = __webpack_require__(196);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -2409,45 +2410,45 @@ webpackJsonp([0],[
 	//# sourceMappingURL=DeferObservable.js.map
 
 /***/ },
-/* 205 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(36);
-	var empty_1 = __webpack_require__(206);
-	Observable_1.Observable.empty = empty_1.empty;
-	//# sourceMappingURL=empty.js.map
-
-/***/ },
-/* 206 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var EmptyObservable_1 = __webpack_require__(191);
-	exports.empty = EmptyObservable_1.EmptyObservable.create;
-	//# sourceMappingURL=empty.js.map
-
-/***/ },
-/* 207 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(36);
-	var forkJoin_1 = __webpack_require__(208);
-	Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
-	//# sourceMappingURL=forkJoin.js.map
-
-/***/ },
 /* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ForkJoinObservable_1 = __webpack_require__(209);
+	var Observable_1 = __webpack_require__(36);
+	var empty_1 = __webpack_require__(209);
+	Observable_1.Observable.empty = empty_1.empty;
+	//# sourceMappingURL=empty.js.map
+
+/***/ },
+/* 209 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var EmptyObservable_1 = __webpack_require__(194);
+	exports.empty = EmptyObservable_1.EmptyObservable.create;
+	//# sourceMappingURL=empty.js.map
+
+/***/ },
+/* 210 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(36);
+	var forkJoin_1 = __webpack_require__(211);
+	Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
+	//# sourceMappingURL=forkJoin.js.map
+
+/***/ },
+/* 211 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ForkJoinObservable_1 = __webpack_require__(212);
 	exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 	//# sourceMappingURL=forkJoin.js.map
 
 /***/ },
-/* 209 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2457,10 +2458,10 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(36);
-	var EmptyObservable_1 = __webpack_require__(191);
+	var EmptyObservable_1 = __webpack_require__(194);
 	var isArray_1 = __webpack_require__(44);
-	var subscribeToResult_1 = __webpack_require__(194);
-	var OuterSubscriber_1 = __webpack_require__(193);
+	var subscribeToResult_1 = __webpack_require__(197);
+	var OuterSubscriber_1 = __webpack_require__(196);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -2563,26 +2564,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ },
-/* 210 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var from_1 = __webpack_require__(211);
+	var from_1 = __webpack_require__(214);
 	Observable_1.Observable.from = from_1.from;
 	//# sourceMappingURL=from.js.map
 
 /***/ },
-/* 211 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var FromObservable_1 = __webpack_require__(212);
+	var FromObservable_1 = __webpack_require__(215);
 	exports.from = FromObservable_1.FromObservable.create;
 	//# sourceMappingURL=from.js.map
 
 /***/ },
-/* 212 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2593,16 +2594,16 @@ webpackJsonp([0],[
 	};
 	var isArray_1 = __webpack_require__(44);
 	var isFunction_1 = __webpack_require__(42);
-	var isPromise_1 = __webpack_require__(195);
-	var isScheduler_1 = __webpack_require__(192);
+	var isPromise_1 = __webpack_require__(198);
+	var isScheduler_1 = __webpack_require__(195);
 	var PromiseObservable_1 = __webpack_require__(54);
-	var IteratorObservable_1 = __webpack_require__(213);
-	var ArrayObservable_1 = __webpack_require__(189);
-	var ArrayLikeObservable_1 = __webpack_require__(214);
+	var IteratorObservable_1 = __webpack_require__(216);
+	var ArrayObservable_1 = __webpack_require__(192);
+	var ArrayLikeObservable_1 = __webpack_require__(217);
 	var observable_1 = __webpack_require__(39);
-	var iterator_1 = __webpack_require__(196);
+	var iterator_1 = __webpack_require__(199);
 	var Observable_1 = __webpack_require__(36);
-	var observeOn_1 = __webpack_require__(215);
+	var observeOn_1 = __webpack_require__(218);
 	var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
@@ -2664,7 +2665,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=FromObservable.js.map
 
 /***/ },
-/* 213 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2678,7 +2679,7 @@ webpackJsonp([0],[
 	var tryCatch_1 = __webpack_require__(46);
 	var Observable_1 = __webpack_require__(36);
 	var isFunction_1 = __webpack_require__(42);
-	var iterator_1 = __webpack_require__(196);
+	var iterator_1 = __webpack_require__(199);
 	var errorObject_1 = __webpack_require__(47);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
@@ -2862,7 +2863,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=IteratorObservable.js.map
 
 /***/ },
-/* 214 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2872,8 +2873,8 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(36);
-	var ScalarObservable_1 = __webpack_require__(190);
-	var EmptyObservable_1 = __webpack_require__(191);
+	var ScalarObservable_1 = __webpack_require__(193);
+	var EmptyObservable_1 = __webpack_require__(194);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -2942,7 +2943,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ },
-/* 215 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2952,7 +2953,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var Notification_1 = __webpack_require__(216);
+	var Notification_1 = __webpack_require__(219);
 	/**
 	 * @see {@link Notification}
 	 *
@@ -3022,7 +3023,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=observeOn.js.map
 
 /***/ },
-/* 216 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3153,26 +3154,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=Notification.js.map
 
 /***/ },
-/* 217 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var fromEvent_1 = __webpack_require__(218);
+	var fromEvent_1 = __webpack_require__(221);
 	Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 	//# sourceMappingURL=fromEvent.js.map
 
 /***/ },
-/* 218 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var FromEventObservable_1 = __webpack_require__(219);
+	var FromEventObservable_1 = __webpack_require__(222);
 	exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
 	//# sourceMappingURL=fromEvent.js.map
 
 /***/ },
-/* 219 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3271,26 +3272,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=FromEventObservable.js.map
 
 /***/ },
-/* 220 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var fromEventPattern_1 = __webpack_require__(221);
+	var fromEventPattern_1 = __webpack_require__(224);
 	Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
 	//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
-/* 221 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var FromEventPatternObservable_1 = __webpack_require__(222);
+	var FromEventPatternObservable_1 = __webpack_require__(225);
 	exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
 	//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
-/* 222 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3356,17 +3357,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=FromEventPatternObservable.js.map
 
 /***/ },
-/* 223 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var fromPromise_1 = __webpack_require__(224);
+	var fromPromise_1 = __webpack_require__(227);
 	Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
 	//# sourceMappingURL=fromPromise.js.map
 
 /***/ },
-/* 224 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3375,26 +3376,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=fromPromise.js.map
 
 /***/ },
-/* 225 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var interval_1 = __webpack_require__(226);
+	var interval_1 = __webpack_require__(229);
 	Observable_1.Observable.interval = interval_1.interval;
 	//# sourceMappingURL=interval.js.map
 
 /***/ },
-/* 226 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var IntervalObservable_1 = __webpack_require__(227);
+	var IntervalObservable_1 = __webpack_require__(230);
 	exports.interval = IntervalObservable_1.IntervalObservable.create;
 	//# sourceMappingURL=interval.js.map
 
 /***/ },
-/* 227 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3403,9 +3404,9 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var isNumeric_1 = __webpack_require__(228);
+	var isNumeric_1 = __webpack_require__(231);
 	var Observable_1 = __webpack_require__(36);
-	var async_1 = __webpack_require__(229);
+	var async_1 = __webpack_require__(232);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -3487,7 +3488,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=IntervalObservable.js.map
 
 /***/ },
-/* 228 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3504,16 +3505,16 @@ webpackJsonp([0],[
 	//# sourceMappingURL=isNumeric.js.map
 
 /***/ },
-/* 229 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var AsyncScheduler_1 = __webpack_require__(230);
+	var AsyncScheduler_1 = __webpack_require__(233);
 	exports.async = new AsyncScheduler_1.AsyncScheduler();
 	//# sourceMappingURL=async.js.map
 
 /***/ },
-/* 230 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3522,8 +3523,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var FutureAction_1 = __webpack_require__(231);
-	var QueueScheduler_1 = __webpack_require__(232);
+	var FutureAction_1 = __webpack_require__(234);
+	var QueueScheduler_1 = __webpack_require__(235);
 	var AsyncScheduler = (function (_super) {
 	    __extends(AsyncScheduler, _super);
 	    function AsyncScheduler() {
@@ -3538,7 +3539,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=AsyncScheduler.js.map
 
 /***/ },
-/* 231 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3678,12 +3679,12 @@ webpackJsonp([0],[
 	//# sourceMappingURL=FutureAction.js.map
 
 /***/ },
-/* 232 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var QueueAction_1 = __webpack_require__(233);
-	var FutureAction_1 = __webpack_require__(231);
+	var QueueAction_1 = __webpack_require__(236);
+	var FutureAction_1 = __webpack_require__(234);
 	var QueueScheduler = (function () {
 	    function QueueScheduler() {
 	        this.active = false;
@@ -3727,7 +3728,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=QueueScheduler.js.map
 
 /***/ },
-/* 233 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3736,7 +3737,7 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var FutureAction_1 = __webpack_require__(231);
+	var FutureAction_1 = __webpack_require__(234);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -3765,32 +3766,32 @@ webpackJsonp([0],[
 	//# sourceMappingURL=QueueAction.js.map
 
 /***/ },
-/* 234 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var merge_1 = __webpack_require__(235);
+	var merge_1 = __webpack_require__(238);
 	Observable_1.Observable.merge = merge_1.merge;
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
-/* 235 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var merge_1 = __webpack_require__(236);
+	var merge_1 = __webpack_require__(239);
 	exports.merge = merge_1.mergeStatic;
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
-/* 236 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ArrayObservable_1 = __webpack_require__(189);
-	var mergeAll_1 = __webpack_require__(201);
-	var isScheduler_1 = __webpack_require__(192);
+	var ArrayObservable_1 = __webpack_require__(192);
+	var mergeAll_1 = __webpack_require__(204);
+	var isScheduler_1 = __webpack_require__(195);
 	/**
 	 * Creates an output Observable which concurrently emits all values from every
 	 * given input Observable.
@@ -3919,17 +3920,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
-/* 237 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var race_1 = __webpack_require__(238);
+	var race_1 = __webpack_require__(241);
 	Observable_1.Observable.race = race_1.raceStatic;
 	//# sourceMappingURL=race.js.map
 
 /***/ },
-/* 238 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3939,9 +3940,9 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var isArray_1 = __webpack_require__(44);
-	var ArrayObservable_1 = __webpack_require__(189);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var ArrayObservable_1 = __webpack_require__(192);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Returns an Observable that mirrors the first source Observable to emit an item
 	 * from the combination of this Observable and supplied Observables
@@ -4043,26 +4044,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=race.js.map
 
 /***/ },
-/* 239 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var never_1 = __webpack_require__(240);
+	var never_1 = __webpack_require__(243);
 	Observable_1.Observable.never = never_1.never;
 	//# sourceMappingURL=never.js.map
 
 /***/ },
-/* 240 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var NeverObservable_1 = __webpack_require__(241);
+	var NeverObservable_1 = __webpack_require__(244);
 	exports.never = NeverObservable_1.NeverObservable.create;
 	//# sourceMappingURL=never.js.map
 
 /***/ },
-/* 241 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4072,7 +4073,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(36);
-	var noop_1 = __webpack_require__(242);
+	var noop_1 = __webpack_require__(245);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -4126,7 +4127,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=NeverObservable.js.map
 
 /***/ },
-/* 242 */
+/* 245 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4136,45 +4137,45 @@ webpackJsonp([0],[
 	//# sourceMappingURL=noop.js.map
 
 /***/ },
-/* 243 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(36);
-	var of_1 = __webpack_require__(244);
-	Observable_1.Observable.of = of_1.of;
-	//# sourceMappingURL=of.js.map
-
-/***/ },
-/* 244 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var ArrayObservable_1 = __webpack_require__(189);
-	exports.of = ArrayObservable_1.ArrayObservable.of;
-	//# sourceMappingURL=of.js.map
-
-/***/ },
-/* 245 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(36);
-	var range_1 = __webpack_require__(246);
-	Observable_1.Observable.range = range_1.range;
-	//# sourceMappingURL=range.js.map
-
-/***/ },
 /* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var RangeObservable_1 = __webpack_require__(247);
+	var Observable_1 = __webpack_require__(36);
+	var of_1 = __webpack_require__(247);
+	Observable_1.Observable.of = of_1.of;
+	//# sourceMappingURL=of.js.map
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ArrayObservable_1 = __webpack_require__(192);
+	exports.of = ArrayObservable_1.ArrayObservable.of;
+	//# sourceMappingURL=of.js.map
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(36);
+	var range_1 = __webpack_require__(249);
+	Observable_1.Observable.range = range_1.range;
+	//# sourceMappingURL=range.js.map
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var RangeObservable_1 = __webpack_require__(250);
 	exports.range = RangeObservable_1.RangeObservable.create;
 	//# sourceMappingURL=range.js.map
 
 /***/ },
-/* 247 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4275,26 +4276,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=RangeObservable.js.map
 
 /***/ },
-/* 248 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var throw_1 = __webpack_require__(249);
+	var throw_1 = __webpack_require__(252);
 	Observable_1.Observable.throw = throw_1._throw;
 	//# sourceMappingURL=throw.js.map
 
 /***/ },
-/* 249 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ErrorObservable_1 = __webpack_require__(250);
+	var ErrorObservable_1 = __webpack_require__(253);
 	exports._throw = ErrorObservable_1.ErrorObservable.create;
 	//# sourceMappingURL=throw.js.map
 
 /***/ },
-/* 250 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4381,26 +4382,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=ErrorObservable.js.map
 
 /***/ },
-/* 251 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var timer_1 = __webpack_require__(252);
+	var timer_1 = __webpack_require__(255);
 	Observable_1.Observable.timer = timer_1.timer;
 	//# sourceMappingURL=timer.js.map
 
 /***/ },
-/* 252 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var TimerObservable_1 = __webpack_require__(253);
+	var TimerObservable_1 = __webpack_require__(256);
 	exports.timer = TimerObservable_1.TimerObservable.create;
 	//# sourceMappingURL=timer.js.map
 
 /***/ },
-/* 253 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4409,11 +4410,11 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var isNumeric_1 = __webpack_require__(228);
+	var isNumeric_1 = __webpack_require__(231);
 	var Observable_1 = __webpack_require__(36);
-	var async_1 = __webpack_require__(229);
-	var isScheduler_1 = __webpack_require__(192);
-	var isDate_1 = __webpack_require__(254);
+	var async_1 = __webpack_require__(232);
+	var isScheduler_1 = __webpack_require__(195);
+	var isDate_1 = __webpack_require__(257);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -4512,7 +4513,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=TimerObservable.js.map
 
 /***/ },
-/* 254 */
+/* 257 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4523,26 +4524,26 @@ webpackJsonp([0],[
 	//# sourceMappingURL=isDate.js.map
 
 /***/ },
-/* 255 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var zip_1 = __webpack_require__(256);
+	var zip_1 = __webpack_require__(259);
 	Observable_1.Observable.zip = zip_1.zip;
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 256 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var zip_1 = __webpack_require__(257);
+	var zip_1 = __webpack_require__(260);
 	exports.zip = zip_1.zipStatic;
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 257 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4551,12 +4552,12 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var ArrayObservable_1 = __webpack_require__(189);
+	var ArrayObservable_1 = __webpack_require__(192);
 	var isArray_1 = __webpack_require__(44);
 	var Subscriber_1 = __webpack_require__(41);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
-	var iterator_1 = __webpack_require__(196);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
+	var iterator_1 = __webpack_require__(199);
 	/**
 	 * @param observables
 	 * @return {Observable<R>}
@@ -4801,17 +4802,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 258 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var buffer_1 = __webpack_require__(259);
+	var buffer_1 = __webpack_require__(262);
 	Observable_1.Observable.prototype.buffer = buffer_1.buffer;
 	//# sourceMappingURL=buffer.js.map
 
 /***/ },
-/* 259 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4820,8 +4821,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Buffers the source Observable values until `closingNotifier` emits.
 	 *
@@ -4892,17 +4893,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=buffer.js.map
 
 /***/ },
-/* 260 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var bufferCount_1 = __webpack_require__(261);
+	var bufferCount_1 = __webpack_require__(264);
 	Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
 	//# sourceMappingURL=bufferCount.js.map
 
 /***/ },
-/* 261 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5020,17 +5021,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=bufferCount.js.map
 
 /***/ },
-/* 262 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var bufferTime_1 = __webpack_require__(263);
+	var bufferTime_1 = __webpack_require__(266);
 	Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
 	//# sourceMappingURL=bufferTime.js.map
 
 /***/ },
-/* 263 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5040,7 +5041,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var async_1 = __webpack_require__(229);
+	var async_1 = __webpack_require__(232);
 	/**
 	 * Buffers the source Observable values for a specific time period.
 	 *
@@ -5183,17 +5184,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=bufferTime.js.map
 
 /***/ },
-/* 264 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var bufferToggle_1 = __webpack_require__(265);
+	var bufferToggle_1 = __webpack_require__(268);
 	Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
 	//# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
-/* 265 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5203,8 +5204,8 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscription_1 = __webpack_require__(43);
-	var subscribeToResult_1 = __webpack_require__(194);
-	var OuterSubscriber_1 = __webpack_require__(193);
+	var subscribeToResult_1 = __webpack_require__(197);
+	var OuterSubscriber_1 = __webpack_require__(196);
 	/**
 	 * Buffers the source Observable values starting from an emission from
 	 * `openings` and ending when the output of `closingSelector` emits.
@@ -5350,17 +5351,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
-/* 266 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var bufferWhen_1 = __webpack_require__(267);
+	var bufferWhen_1 = __webpack_require__(270);
 	Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
 	//# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
-/* 267 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5372,8 +5373,8 @@ webpackJsonp([0],[
 	var Subscription_1 = __webpack_require__(43);
 	var tryCatch_1 = __webpack_require__(46);
 	var errorObject_1 = __webpack_require__(47);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Buffers the source Observable values, using a factory function of closing
 	 * Observables to determine when to close, emit, and reset the buffer.
@@ -5487,21 +5488,21 @@ webpackJsonp([0],[
 	//# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
-/* 268 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var cache_1 = __webpack_require__(269);
+	var cache_1 = __webpack_require__(272);
 	Observable_1.Observable.prototype.cache = cache_1.cache;
 	//# sourceMappingURL=cache.js.map
 
 /***/ },
-/* 269 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var publishReplay_1 = __webpack_require__(270);
+	var publishReplay_1 = __webpack_require__(273);
 	/**
 	 * @param bufferSize
 	 * @param windowTime
@@ -5519,12 +5520,12 @@ webpackJsonp([0],[
 	//# sourceMappingURL=cache.js.map
 
 /***/ },
-/* 270 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ReplaySubject_1 = __webpack_require__(271);
-	var multicast_1 = __webpack_require__(273);
+	var ReplaySubject_1 = __webpack_require__(274);
+	var multicast_1 = __webpack_require__(276);
 	/**
 	 * @param bufferSize
 	 * @param windowTime
@@ -5542,7 +5543,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=publishReplay.js.map
 
 /***/ },
-/* 271 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5552,8 +5553,8 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subject_1 = __webpack_require__(35);
-	var queue_1 = __webpack_require__(272);
-	var observeOn_1 = __webpack_require__(215);
+	var queue_1 = __webpack_require__(275);
+	var observeOn_1 = __webpack_require__(218);
 	/**
 	 * @class ReplaySubject<T>
 	 */
@@ -5626,20 +5627,20 @@ webpackJsonp([0],[
 	//# sourceMappingURL=ReplaySubject.js.map
 
 /***/ },
-/* 272 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var QueueScheduler_1 = __webpack_require__(232);
+	var QueueScheduler_1 = __webpack_require__(235);
 	exports.queue = new QueueScheduler_1.QueueScheduler();
 	//# sourceMappingURL=queue.js.map
 
 /***/ },
-/* 273 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ConnectableObservable_1 = __webpack_require__(274);
+	var ConnectableObservable_1 = __webpack_require__(277);
 	/**
 	 * Returns an Observable that emits the results of invoking a specified selector on items
 	 * emitted by a ConnectableObservable that shares a single subscription to the underlying stream.
@@ -5672,7 +5673,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=multicast.js.map
 
 /***/ },
-/* 274 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5825,17 +5826,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ },
-/* 275 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var catch_1 = __webpack_require__(276);
+	var catch_1 = __webpack_require__(279);
 	Observable_1.Observable.prototype.catch = catch_1._catch;
 	//# sourceMappingURL=catch.js.map
 
 /***/ },
-/* 276 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5907,21 +5908,21 @@ webpackJsonp([0],[
 	//# sourceMappingURL=catch.js.map
 
 /***/ },
-/* 277 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var combineAll_1 = __webpack_require__(278);
+	var combineAll_1 = __webpack_require__(281);
 	Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
 	//# sourceMappingURL=combineAll.js.map
 
 /***/ },
-/* 278 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var combineLatest_1 = __webpack_require__(188);
+	var combineLatest_1 = __webpack_require__(191);
 	/**
 	 * Converts a higher-order Observable into a first-order Observable by waiting
 	 * for the outer Observable to complete, then applying {@link combineLatest}.
@@ -5969,41 +5970,41 @@ webpackJsonp([0],[
 	//# sourceMappingURL=combineAll.js.map
 
 /***/ },
-/* 279 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(36);
-	var combineLatest_1 = __webpack_require__(188);
-	Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
-	//# sourceMappingURL=combineLatest.js.map
-
-/***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(36);
-	var concat_1 = __webpack_require__(200);
-	Observable_1.Observable.prototype.concat = concat_1.concat;
-	//# sourceMappingURL=concat.js.map
-
-/***/ },
-/* 281 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(36);
-	var concatAll_1 = __webpack_require__(282);
-	Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
-	//# sourceMappingURL=concatAll.js.map
-
-/***/ },
 /* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var mergeAll_1 = __webpack_require__(201);
+	var Observable_1 = __webpack_require__(36);
+	var combineLatest_1 = __webpack_require__(191);
+	Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
+	//# sourceMappingURL=combineLatest.js.map
+
+/***/ },
+/* 283 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(36);
+	var concat_1 = __webpack_require__(203);
+	Observable_1.Observable.prototype.concat = concat_1.concat;
+	//# sourceMappingURL=concat.js.map
+
+/***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(36);
+	var concatAll_1 = __webpack_require__(285);
+	Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
+	//# sourceMappingURL=concatAll.js.map
+
+/***/ },
+/* 285 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var mergeAll_1 = __webpack_require__(204);
 	/**
 	 * Converts a higher-order Observable into a first-order Observable by
 	 * concatenating the inner Observables in order.
@@ -6053,21 +6054,21 @@ webpackJsonp([0],[
 	//# sourceMappingURL=concatAll.js.map
 
 /***/ },
-/* 283 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var concatMap_1 = __webpack_require__(284);
+	var concatMap_1 = __webpack_require__(287);
 	Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
 	//# sourceMappingURL=concatMap.js.map
 
 /***/ },
-/* 284 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var mergeMap_1 = __webpack_require__(285);
+	var mergeMap_1 = __webpack_require__(288);
 	/**
 	 * Projects each source value to an Observable which is merged in the output
 	 * Observable, in a serialized fashion waiting for each one to complete before
@@ -6131,7 +6132,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=concatMap.js.map
 
 /***/ },
-/* 285 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6140,8 +6141,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var subscribeToResult_1 = __webpack_require__(194);
-	var OuterSubscriber_1 = __webpack_require__(193);
+	var subscribeToResult_1 = __webpack_require__(197);
+	var OuterSubscriber_1 = __webpack_require__(196);
 	/**
 	 * Projects each source value to an Observable which is merged in the output
 	 * Observable.
@@ -6297,21 +6298,21 @@ webpackJsonp([0],[
 	//# sourceMappingURL=mergeMap.js.map
 
 /***/ },
-/* 286 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var concatMapTo_1 = __webpack_require__(287);
+	var concatMapTo_1 = __webpack_require__(290);
 	Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
 	//# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
-/* 287 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var mergeMapTo_1 = __webpack_require__(288);
+	var mergeMapTo_1 = __webpack_require__(291);
 	/**
 	 * Projects each source value to the same Observable which is merged multiple
 	 * times in a serialized fashion on the output Observable.
@@ -6369,7 +6370,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
-/* 288 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6378,8 +6379,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Projects each source value to the same Observable which is merged multiple
 	 * times in the output Observable.
@@ -6528,17 +6529,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
-/* 289 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var count_1 = __webpack_require__(290);
+	var count_1 = __webpack_require__(293);
 	Observable_1.Observable.prototype.count = count_1.count;
 	//# sourceMappingURL=count.js.map
 
 /***/ },
-/* 290 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6651,17 +6652,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=count.js.map
 
 /***/ },
-/* 291 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var dematerialize_1 = __webpack_require__(292);
+	var dematerialize_1 = __webpack_require__(295);
 	Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
 	//# sourceMappingURL=dematerialize.js.map
 
 /***/ },
-/* 292 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6710,17 +6711,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=dematerialize.js.map
 
 /***/ },
-/* 293 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var debounce_1 = __webpack_require__(294);
+	var debounce_1 = __webpack_require__(297);
 	Observable_1.Observable.prototype.debounce = debounce_1.debounce;
 	//# sourceMappingURL=debounce.js.map
 
 /***/ },
-/* 294 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6729,8 +6730,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Returns the source Observable delayed by the computed debounce duration,
 	 * with the duration lengthened if a new source item arrives before the delay
@@ -6822,17 +6823,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=debounce.js.map
 
 /***/ },
-/* 295 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var debounceTime_1 = __webpack_require__(296);
+	var debounceTime_1 = __webpack_require__(299);
 	Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 	//# sourceMappingURL=debounceTime.js.map
 
 /***/ },
-/* 296 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6842,7 +6843,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var async_1 = __webpack_require__(229);
+	var async_1 = __webpack_require__(232);
 	/**
 	 * Returns the source Observable delayed by the computed debounce duration,
 	 * with the duration lengthened if a new source item arrives before the delay
@@ -6921,17 +6922,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=debounceTime.js.map
 
 /***/ },
-/* 297 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var defaultIfEmpty_1 = __webpack_require__(298);
+	var defaultIfEmpty_1 = __webpack_require__(301);
 	Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
 	//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
-/* 298 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6989,17 +6990,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
-/* 299 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var delay_1 = __webpack_require__(300);
+	var delay_1 = __webpack_require__(303);
 	Observable_1.Observable.prototype.delay = delay_1.delay;
 	//# sourceMappingURL=delay.js.map
 
 /***/ },
-/* 300 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7008,10 +7009,10 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var async_1 = __webpack_require__(229);
-	var isDate_1 = __webpack_require__(254);
+	var async_1 = __webpack_require__(232);
+	var isDate_1 = __webpack_require__(257);
 	var Subscriber_1 = __webpack_require__(41);
-	var Notification_1 = __webpack_require__(216);
+	var Notification_1 = __webpack_require__(219);
 	/**
 	 * Delays the emission of items from the source Observable by a given timeout or
 	 * until a given Date.
@@ -7139,17 +7140,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=delay.js.map
 
 /***/ },
-/* 301 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var delayWhen_1 = __webpack_require__(302);
+	var delayWhen_1 = __webpack_require__(305);
 	Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
 	//# sourceMappingURL=delayWhen.js.map
 
 /***/ },
-/* 302 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7160,8 +7161,8 @@ webpackJsonp([0],[
 	};
 	var Subscriber_1 = __webpack_require__(41);
 	var Observable_1 = __webpack_require__(36);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Returns an Observable that delays the emission of items from the source Observable
 	 * by a subscription delay and a delay selector function for each element.
@@ -7308,17 +7309,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=delayWhen.js.map
 
 /***/ },
-/* 303 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var distinctUntilChanged_1 = __webpack_require__(304);
+	var distinctUntilChanged_1 = __webpack_require__(307);
 	Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
 	//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ },
-/* 304 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7400,17 +7401,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ },
-/* 305 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var do_1 = __webpack_require__(306);
+	var do_1 = __webpack_require__(309);
 	Observable_1.Observable.prototype.do = do_1._do;
 	//# sourceMappingURL=do.js.map
 
 /***/ },
-/* 306 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7527,17 +7528,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=do.js.map
 
 /***/ },
-/* 307 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var expand_1 = __webpack_require__(308);
+	var expand_1 = __webpack_require__(311);
 	Observable_1.Observable.prototype.expand = expand_1.expand;
 	//# sourceMappingURL=expand.js.map
 
 /***/ },
-/* 308 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7548,8 +7549,8 @@ webpackJsonp([0],[
 	};
 	var tryCatch_1 = __webpack_require__(46);
 	var errorObject_1 = __webpack_require__(47);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Returns an Observable where for each item in the source Observable, the supplied function is applied to each item,
 	 * resulting in a new value to then be applied again with the function.
@@ -7657,17 +7658,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=expand.js.map
 
 /***/ },
-/* 309 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var filter_1 = __webpack_require__(310);
+	var filter_1 = __webpack_require__(313);
 	Observable_1.Observable.prototype.filter = filter_1.filter;
 	//# sourceMappingURL=filter.js.map
 
 /***/ },
-/* 310 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7765,17 +7766,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=filter.js.map
 
 /***/ },
-/* 311 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var finally_1 = __webpack_require__(312);
+	var finally_1 = __webpack_require__(315);
 	Observable_1.Observable.prototype.finally = finally_1._finally;
 	//# sourceMappingURL=finally.js.map
 
 /***/ },
-/* 312 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7823,17 +7824,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=finally.js.map
 
 /***/ },
-/* 313 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var first_1 = __webpack_require__(314);
+	var first_1 = __webpack_require__(317);
 	Observable_1.Observable.prototype.first = first_1.first;
 	//# sourceMappingURL=first.js.map
 
 /***/ },
-/* 314 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7843,7 +7844,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var EmptyError_1 = __webpack_require__(315);
+	var EmptyError_1 = __webpack_require__(318);
 	/**
 	 * Emits only the first value (or the first value that meets some condition)
 	 * emitted by the source Observable.
@@ -7986,7 +7987,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=first.js.map
 
 /***/ },
-/* 315 */
+/* 318 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8017,17 +8018,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=EmptyError.js.map
 
 /***/ },
-/* 316 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var groupBy_1 = __webpack_require__(317);
+	var groupBy_1 = __webpack_require__(320);
 	Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
 	//# sourceMappingURL=groupBy.js.map
 
 /***/ },
-/* 317 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8040,8 +8041,8 @@ webpackJsonp([0],[
 	var Subscription_1 = __webpack_require__(43);
 	var Observable_1 = __webpack_require__(36);
 	var Subject_1 = __webpack_require__(35);
-	var Map_1 = __webpack_require__(318);
-	var FastMap_1 = __webpack_require__(320);
+	var Map_1 = __webpack_require__(321);
+	var FastMap_1 = __webpack_require__(323);
 	/**
 	 * Groups the items emitted by an Observable according to a specified criterion,
 	 * and emits these grouped items as `GroupedObservables`, one
@@ -8282,17 +8283,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=groupBy.js.map
 
 /***/ },
-/* 318 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var root_1 = __webpack_require__(37);
-	var MapPolyfill_1 = __webpack_require__(319);
+	var MapPolyfill_1 = __webpack_require__(322);
 	exports.Map = root_1.root.Map || (function () { return MapPolyfill_1.MapPolyfill; })();
 	//# sourceMappingURL=Map.js.map
 
 /***/ },
-/* 319 */
+/* 322 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8344,7 +8345,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=MapPolyfill.js.map
 
 /***/ },
-/* 320 */
+/* 323 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8380,17 +8381,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=FastMap.js.map
 
 /***/ },
-/* 321 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var ignoreElements_1 = __webpack_require__(322);
+	var ignoreElements_1 = __webpack_require__(325);
 	Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
 	//# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
-/* 322 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8400,7 +8401,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var noop_1 = __webpack_require__(242);
+	var noop_1 = __webpack_require__(245);
 	/**
 	 * Ignores all items emitted by the source Observable and only passes calls of `complete` or `error`.
 	 *
@@ -8442,17 +8443,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
-/* 323 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var audit_1 = __webpack_require__(324);
+	var audit_1 = __webpack_require__(327);
 	Observable_1.Observable.prototype.audit = audit_1.audit;
 	//# sourceMappingURL=audit.js.map
 
 /***/ },
-/* 324 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8463,8 +8464,8 @@ webpackJsonp([0],[
 	};
 	var tryCatch_1 = __webpack_require__(46);
 	var errorObject_1 = __webpack_require__(47);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * @param durationSelector
 	 * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}
@@ -8533,17 +8534,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=audit.js.map
 
 /***/ },
-/* 325 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var auditTime_1 = __webpack_require__(326);
+	var auditTime_1 = __webpack_require__(329);
 	Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
 	//# sourceMappingURL=auditTime.js.map
 
 /***/ },
-/* 326 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8552,7 +8553,7 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var async_1 = __webpack_require__(229);
+	var async_1 = __webpack_require__(232);
 	var Subscriber_1 = __webpack_require__(41);
 	/**
 	 * @param delay
@@ -8617,17 +8618,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=auditTime.js.map
 
 /***/ },
-/* 327 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var last_1 = __webpack_require__(328);
+	var last_1 = __webpack_require__(331);
 	Observable_1.Observable.prototype.last = last_1.last;
 	//# sourceMappingURL=last.js.map
 
 /***/ },
-/* 328 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8637,7 +8638,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var EmptyError_1 = __webpack_require__(315);
+	var EmptyError_1 = __webpack_require__(318);
 	/**
 	 * Returns an Observable that emits only the last item emitted by the source Observable.
 	 * It optionally takes a predicate function as a parameter, in which case, rather than emitting
@@ -8750,18 +8751,18 @@ webpackJsonp([0],[
 	//# sourceMappingURL=last.js.map
 
 /***/ },
-/* 329 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var let_1 = __webpack_require__(330);
+	var let_1 = __webpack_require__(333);
 	Observable_1.Observable.prototype.let = let_1.letProto;
 	Observable_1.Observable.prototype.letBind = let_1.letProto;
 	//# sourceMappingURL=let.js.map
 
 /***/ },
-/* 330 */
+/* 333 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8778,17 +8779,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=let.js.map
 
 /***/ },
-/* 331 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var every_1 = __webpack_require__(332);
+	var every_1 = __webpack_require__(335);
 	Observable_1.Observable.prototype.every = every_1.every;
 	//# sourceMappingURL=every.js.map
 
 /***/ },
-/* 332 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8862,17 +8863,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=every.js.map
 
 /***/ },
-/* 333 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var map_1 = __webpack_require__(334);
+	var map_1 = __webpack_require__(337);
 	Observable_1.Observable.prototype.map = map_1.map;
 	//# sourceMappingURL=map.js.map
 
 /***/ },
-/* 334 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8963,17 +8964,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=map.js.map
 
 /***/ },
-/* 335 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var mapTo_1 = __webpack_require__(336);
+	var mapTo_1 = __webpack_require__(339);
 	Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
 	//# sourceMappingURL=mapTo.js.map
 
 /***/ },
-/* 336 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9041,17 +9042,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=mapTo.js.map
 
 /***/ },
-/* 337 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var materialize_1 = __webpack_require__(338);
+	var materialize_1 = __webpack_require__(341);
 	Observable_1.Observable.prototype.materialize = materialize_1.materialize;
 	//# sourceMappingURL=materialize.js.map
 
 /***/ },
-/* 338 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9061,7 +9062,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var Notification_1 = __webpack_require__(216);
+	var Notification_1 = __webpack_require__(219);
 	/**
 	 * Returns an Observable that represents all of the emissions and notifications
 	 * from the source Observable into emissions marked with their original types
@@ -9117,46 +9118,14 @@ webpackJsonp([0],[
 	//# sourceMappingURL=materialize.js.map
 
 /***/ },
-/* 339 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(36);
-	var merge_1 = __webpack_require__(236);
-	Observable_1.Observable.prototype.merge = merge_1.merge;
-	//# sourceMappingURL=merge.js.map
-
-/***/ },
-/* 340 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(36);
-	var mergeAll_1 = __webpack_require__(201);
-	Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
-	//# sourceMappingURL=mergeAll.js.map
-
-/***/ },
-/* 341 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var Observable_1 = __webpack_require__(36);
-	var mergeMap_1 = __webpack_require__(285);
-	Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
-	Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
-	//# sourceMappingURL=mergeMap.js.map
-
-/***/ },
 /* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var mergeMapTo_1 = __webpack_require__(288);
-	Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
-	Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
-	//# sourceMappingURL=mergeMapTo.js.map
+	var merge_1 = __webpack_require__(239);
+	Observable_1.Observable.prototype.merge = merge_1.merge;
+	//# sourceMappingURL=merge.js.map
 
 /***/ },
 /* 343 */
@@ -9164,9 +9133,9 @@ webpackJsonp([0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var multicast_1 = __webpack_require__(273);
-	Observable_1.Observable.prototype.multicast = multicast_1.multicast;
-	//# sourceMappingURL=multicast.js.map
+	var mergeAll_1 = __webpack_require__(204);
+	Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
+	//# sourceMappingURL=mergeAll.js.map
 
 /***/ },
 /* 344 */
@@ -9174,9 +9143,10 @@ webpackJsonp([0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var observeOn_1 = __webpack_require__(215);
-	Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
-	//# sourceMappingURL=observeOn.js.map
+	var mergeMap_1 = __webpack_require__(288);
+	Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
+	Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
+	//# sourceMappingURL=mergeMap.js.map
 
 /***/ },
 /* 345 */
@@ -9184,17 +9154,48 @@ webpackJsonp([0],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var partition_1 = __webpack_require__(346);
-	Observable_1.Observable.prototype.partition = partition_1.partition;
-	//# sourceMappingURL=partition.js.map
+	var mergeMapTo_1 = __webpack_require__(291);
+	Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
+	Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
+	//# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
 /* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var not_1 = __webpack_require__(347);
-	var filter_1 = __webpack_require__(310);
+	var Observable_1 = __webpack_require__(36);
+	var multicast_1 = __webpack_require__(276);
+	Observable_1.Observable.prototype.multicast = multicast_1.multicast;
+	//# sourceMappingURL=multicast.js.map
+
+/***/ },
+/* 347 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(36);
+	var observeOn_1 = __webpack_require__(218);
+	Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
+	//# sourceMappingURL=observeOn.js.map
+
+/***/ },
+/* 348 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(36);
+	var partition_1 = __webpack_require__(349);
+	Observable_1.Observable.prototype.partition = partition_1.partition;
+	//# sourceMappingURL=partition.js.map
+
+/***/ },
+/* 349 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var not_1 = __webpack_require__(350);
+	var filter_1 = __webpack_require__(313);
 	/**
 	 * @param predicate
 	 * @param thisArg
@@ -9212,7 +9213,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=partition.js.map
 
 /***/ },
-/* 347 */
+/* 350 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9228,21 +9229,21 @@ webpackJsonp([0],[
 	//# sourceMappingURL=not.js.map
 
 /***/ },
-/* 348 */
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var pluck_1 = __webpack_require__(349);
+	var pluck_1 = __webpack_require__(352);
 	Observable_1.Observable.prototype.pluck = pluck_1.pluck;
 	//# sourceMappingURL=pluck.js.map
 
 /***/ },
-/* 349 */
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var map_1 = __webpack_require__(334);
+	var map_1 = __webpack_require__(337);
 	/**
 	 * Maps each source value (an object) to its specified nested property.
 	 *
@@ -9301,22 +9302,22 @@ webpackJsonp([0],[
 	//# sourceMappingURL=pluck.js.map
 
 /***/ },
-/* 350 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var publish_1 = __webpack_require__(351);
+	var publish_1 = __webpack_require__(354);
 	Observable_1.Observable.prototype.publish = publish_1.publish;
 	//# sourceMappingURL=publish.js.map
 
 /***/ },
-/* 351 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Subject_1 = __webpack_require__(35);
-	var multicast_1 = __webpack_require__(273);
+	var multicast_1 = __webpack_require__(276);
 	/**
 	 * Returns a ConnectableObservable, which is a variety of Observable that waits until its connect method is called
 	 * before it begins emitting items to those Observers that have subscribed to it.
@@ -9334,22 +9335,22 @@ webpackJsonp([0],[
 	//# sourceMappingURL=publish.js.map
 
 /***/ },
-/* 352 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var publishBehavior_1 = __webpack_require__(353);
+	var publishBehavior_1 = __webpack_require__(356);
 	Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
 	//# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
-/* 353 */
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var BehaviorSubject_1 = __webpack_require__(354);
-	var multicast_1 = __webpack_require__(273);
+	var BehaviorSubject_1 = __webpack_require__(357);
+	var multicast_1 = __webpack_require__(276);
 	/**
 	 * @param value
 	 * @return {ConnectableObservable<T>}
@@ -9363,7 +9364,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
-/* 354 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9422,32 +9423,32 @@ webpackJsonp([0],[
 	//# sourceMappingURL=BehaviorSubject.js.map
 
 /***/ },
-/* 355 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var publishReplay_1 = __webpack_require__(270);
+	var publishReplay_1 = __webpack_require__(273);
 	Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 	//# sourceMappingURL=publishReplay.js.map
 
 /***/ },
-/* 356 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var publishLast_1 = __webpack_require__(357);
+	var publishLast_1 = __webpack_require__(360);
 	Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
 	//# sourceMappingURL=publishLast.js.map
 
 /***/ },
-/* 357 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var AsyncSubject_1 = __webpack_require__(183);
-	var multicast_1 = __webpack_require__(273);
+	var AsyncSubject_1 = __webpack_require__(186);
+	var multicast_1 = __webpack_require__(276);
 	/**
 	 * @return {ConnectableObservable<T>}
 	 * @method publishLast
@@ -9460,27 +9461,27 @@ webpackJsonp([0],[
 	//# sourceMappingURL=publishLast.js.map
 
 /***/ },
-/* 358 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var race_1 = __webpack_require__(238);
+	var race_1 = __webpack_require__(241);
 	Observable_1.Observable.prototype.race = race_1.race;
 	//# sourceMappingURL=race.js.map
 
 /***/ },
-/* 359 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var reduce_1 = __webpack_require__(360);
+	var reduce_1 = __webpack_require__(363);
 	Observable_1.Observable.prototype.reduce = reduce_1.reduce;
 	//# sourceMappingURL=reduce.js.map
 
 /***/ },
-/* 360 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9569,17 +9570,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=reduce.js.map
 
 /***/ },
-/* 361 */
+/* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var repeat_1 = __webpack_require__(362);
+	var repeat_1 = __webpack_require__(365);
 	Observable_1.Observable.prototype.repeat = repeat_1.repeat;
 	//# sourceMappingURL=repeat.js.map
 
 /***/ },
-/* 362 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9589,7 +9590,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var EmptyObservable_1 = __webpack_require__(191);
+	var EmptyObservable_1 = __webpack_require__(194);
 	/**
 	 * Returns an Observable that repeats the stream of items emitted by the source Observable at most count times,
 	 * on a particular Scheduler.
@@ -9659,17 +9660,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=repeat.js.map
 
 /***/ },
-/* 363 */
+/* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var retry_1 = __webpack_require__(364);
+	var retry_1 = __webpack_require__(367);
 	Observable_1.Observable.prototype.retry = retry_1.retry;
 	//# sourceMappingURL=retry.js.map
 
 /***/ },
-/* 364 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9743,17 +9744,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=retry.js.map
 
 /***/ },
-/* 365 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var retryWhen_1 = __webpack_require__(366);
+	var retryWhen_1 = __webpack_require__(369);
 	Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
 	//# sourceMappingURL=retryWhen.js.map
 
 /***/ },
-/* 366 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9765,8 +9766,8 @@ webpackJsonp([0],[
 	var Subject_1 = __webpack_require__(35);
 	var tryCatch_1 = __webpack_require__(46);
 	var errorObject_1 = __webpack_require__(47);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Returns an Observable that emits the same values as the source observable with the exception of an `error`.
 	 * An `error` will cause the emission of the Throwable that cause the error to the Observable returned from
@@ -9864,17 +9865,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=retryWhen.js.map
 
 /***/ },
-/* 367 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var sample_1 = __webpack_require__(368);
+	var sample_1 = __webpack_require__(371);
 	Observable_1.Observable.prototype.sample = sample_1.sample;
 	//# sourceMappingURL=sample.js.map
 
 /***/ },
-/* 368 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9883,8 +9884,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Returns an Observable that, when the specified sampler Observable emits an item or completes, it then emits the most
 	 * recently emitted item (if any) emitted by the source Observable since the previous emission from the sampler
@@ -9944,17 +9945,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=sample.js.map
 
 /***/ },
-/* 369 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var sampleTime_1 = __webpack_require__(370);
+	var sampleTime_1 = __webpack_require__(373);
 	Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
 	//# sourceMappingURL=sampleTime.js.map
 
 /***/ },
-/* 370 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9964,7 +9965,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var async_1 = __webpack_require__(229);
+	var async_1 = __webpack_require__(232);
 	/**
 	 * @param delay
 	 * @param scheduler
@@ -10021,17 +10022,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=sampleTime.js.map
 
 /***/ },
-/* 371 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var scan_1 = __webpack_require__(372);
+	var scan_1 = __webpack_require__(375);
 	Observable_1.Observable.prototype.scan = scan_1.scan;
 	//# sourceMappingURL=scan.js.map
 
 /***/ },
-/* 372 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10143,21 +10144,21 @@ webpackJsonp([0],[
 	//# sourceMappingURL=scan.js.map
 
 /***/ },
-/* 373 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var share_1 = __webpack_require__(374);
+	var share_1 = __webpack_require__(377);
 	Observable_1.Observable.prototype.share = share_1.share;
 	//# sourceMappingURL=share.js.map
 
 /***/ },
-/* 374 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var multicast_1 = __webpack_require__(273);
+	var multicast_1 = __webpack_require__(276);
 	var Subject_1 = __webpack_require__(35);
 	function shareSubjectFactory() {
 	    return new Subject_1.Subject();
@@ -10182,17 +10183,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=share.js.map
 
 /***/ },
-/* 375 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var single_1 = __webpack_require__(376);
+	var single_1 = __webpack_require__(379);
 	Observable_1.Observable.prototype.single = single_1.single;
 	//# sourceMappingURL=single.js.map
 
 /***/ },
-/* 376 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10202,7 +10203,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var EmptyError_1 = __webpack_require__(315);
+	var EmptyError_1 = __webpack_require__(318);
 	/**
 	 * Returns an Observable that emits the single item emitted by the source Observable that matches a specified
 	 * predicate, if that Observable emits one such item. If the source Observable emits more than one such item or no
@@ -10292,17 +10293,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=single.js.map
 
 /***/ },
-/* 377 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var skip_1 = __webpack_require__(378);
+	var skip_1 = __webpack_require__(381);
 	Observable_1.Observable.prototype.skip = skip_1.skip;
 	//# sourceMappingURL=skip.js.map
 
 /***/ },
-/* 378 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10358,17 +10359,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=skip.js.map
 
 /***/ },
-/* 379 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var skipUntil_1 = __webpack_require__(380);
+	var skipUntil_1 = __webpack_require__(383);
 	Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
 	//# sourceMappingURL=skipUntil.js.map
 
 /***/ },
-/* 380 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10377,8 +10378,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Returns an Observable that skips items emitted by the source Observable until a second Observable emits an item.
 	 *
@@ -10444,17 +10445,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=skipUntil.js.map
 
 /***/ },
-/* 381 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var skipWhile_1 = __webpack_require__(382);
+	var skipWhile_1 = __webpack_require__(385);
 	Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
 	//# sourceMappingURL=skipWhile.js.map
 
 /***/ },
-/* 382 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10525,25 +10526,25 @@ webpackJsonp([0],[
 	//# sourceMappingURL=skipWhile.js.map
 
 /***/ },
-/* 383 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var startWith_1 = __webpack_require__(384);
+	var startWith_1 = __webpack_require__(387);
 	Observable_1.Observable.prototype.startWith = startWith_1.startWith;
 	//# sourceMappingURL=startWith.js.map
 
 /***/ },
-/* 384 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ArrayObservable_1 = __webpack_require__(189);
-	var ScalarObservable_1 = __webpack_require__(190);
-	var EmptyObservable_1 = __webpack_require__(191);
-	var concat_1 = __webpack_require__(200);
-	var isScheduler_1 = __webpack_require__(192);
+	var ArrayObservable_1 = __webpack_require__(192);
+	var ScalarObservable_1 = __webpack_require__(193);
+	var EmptyObservable_1 = __webpack_require__(194);
+	var concat_1 = __webpack_require__(203);
+	var isScheduler_1 = __webpack_require__(195);
 	/**
 	 * Returns an Observable that emits the items in a specified Iterable before it begins to emit items emitted by the
 	 * source Observable.
@@ -10583,21 +10584,21 @@ webpackJsonp([0],[
 	//# sourceMappingURL=startWith.js.map
 
 /***/ },
-/* 385 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var subscribeOn_1 = __webpack_require__(386);
+	var subscribeOn_1 = __webpack_require__(389);
 	Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
 	//# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
-/* 386 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var SubscribeOnObservable_1 = __webpack_require__(387);
+	var SubscribeOnObservable_1 = __webpack_require__(390);
 	/**
 	 * Asynchronously subscribes Observers to this Observable on the specified Scheduler.
 	 *
@@ -10617,7 +10618,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
-/* 387 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10627,8 +10628,8 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(36);
-	var asap_1 = __webpack_require__(388);
-	var isNumeric_1 = __webpack_require__(228);
+	var asap_1 = __webpack_require__(391);
+	var isNumeric_1 = __webpack_require__(231);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -10673,16 +10674,16 @@ webpackJsonp([0],[
 	//# sourceMappingURL=SubscribeOnObservable.js.map
 
 /***/ },
-/* 388 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var AsapScheduler_1 = __webpack_require__(389);
+	var AsapScheduler_1 = __webpack_require__(392);
 	exports.asap = new AsapScheduler_1.AsapScheduler();
 	//# sourceMappingURL=asap.js.map
 
 /***/ },
-/* 389 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10691,8 +10692,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var AsapAction_1 = __webpack_require__(390);
-	var QueueScheduler_1 = __webpack_require__(232);
+	var AsapAction_1 = __webpack_require__(393);
+	var QueueScheduler_1 = __webpack_require__(235);
 	var AsapScheduler = (function (_super) {
 	    __extends(AsapScheduler, _super);
 	    function AsapScheduler() {
@@ -10707,7 +10708,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=AsapScheduler.js.map
 
 /***/ },
-/* 390 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10716,8 +10717,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Immediate_1 = __webpack_require__(391);
-	var FutureAction_1 = __webpack_require__(231);
+	var Immediate_1 = __webpack_require__(394);
+	var FutureAction_1 = __webpack_require__(234);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -10763,7 +10764,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=AsapAction.js.map
 
 /***/ },
-/* 391 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(clearImmediate, setImmediate) {/**
@@ -10975,13 +10976,13 @@ webpackJsonp([0],[
 	exports.ImmediateDefinition = ImmediateDefinition;
 	exports.Immediate = new ImmediateDefinition(root_1.root);
 	//# sourceMappingURL=Immediate.js.map
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(392).clearImmediate, __webpack_require__(392).setImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(395).clearImmediate, __webpack_require__(395).setImmediate))
 
 /***/ },
-/* 392 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(393).nextTick;
+	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(396).nextTick;
 	var apply = Function.prototype.apply;
 	var slice = Array.prototype.slice;
 	var immediateIds = {};
@@ -11057,21 +11058,21 @@ webpackJsonp([0],[
 	exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate : function(id) {
 	  delete immediateIds[id];
 	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(392).setImmediate, __webpack_require__(392).clearImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(395).setImmediate, __webpack_require__(395).clearImmediate))
 
 /***/ },
-/* 393 */,
-/* 394 */
+/* 396 */,
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var switch_1 = __webpack_require__(395);
+	var switch_1 = __webpack_require__(398);
 	Observable_1.Observable.prototype.switch = switch_1._switch;
 	//# sourceMappingURL=switch.js.map
 
 /***/ },
-/* 395 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11080,8 +11081,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Converts a higher-order Observable into a first-order Observable by
 	 * subscribing to only the most recently emitted of those inner Observables.
@@ -11184,17 +11185,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=switch.js.map
 
 /***/ },
-/* 396 */
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var switchMap_1 = __webpack_require__(397);
+	var switchMap_1 = __webpack_require__(400);
 	Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
 	//# sourceMappingURL=switchMap.js.map
 
 /***/ },
-/* 397 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11203,8 +11204,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Projects each source value to an Observable which is merged in the output
 	 * Observable, emitting values only from the most recently projected Observable.
@@ -11338,17 +11339,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=switchMap.js.map
 
 /***/ },
-/* 398 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var switchMapTo_1 = __webpack_require__(399);
+	var switchMapTo_1 = __webpack_require__(402);
 	Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
 	//# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
-/* 399 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11357,8 +11358,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Projects each source value to the same Observable which is flattened multiple
 	 * times with {@link switch} in the output Observable.
@@ -11479,17 +11480,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
-/* 400 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var take_1 = __webpack_require__(401);
+	var take_1 = __webpack_require__(404);
 	Observable_1.Observable.prototype.take = take_1.take;
 	//# sourceMappingURL=take.js.map
 
 /***/ },
-/* 401 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11499,8 +11500,8 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var ArgumentOutOfRangeError_1 = __webpack_require__(402);
-	var EmptyObservable_1 = __webpack_require__(191);
+	var ArgumentOutOfRangeError_1 = __webpack_require__(405);
+	var EmptyObservable_1 = __webpack_require__(194);
 	/**
 	 * @throws {ArgumentOutOfRangeError} When using `take(i)`, it delivers an
 	 * ArgumentOutOrRangeError to the Observer's `error` callback if `i < 0`.
@@ -11557,7 +11558,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=take.js.map
 
 /***/ },
-/* 402 */
+/* 405 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11588,17 +11589,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=ArgumentOutOfRangeError.js.map
 
 /***/ },
-/* 403 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var takeLast_1 = __webpack_require__(404);
+	var takeLast_1 = __webpack_require__(407);
 	Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
 	//# sourceMappingURL=takeLast.js.map
 
 /***/ },
-/* 404 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11608,8 +11609,8 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var ArgumentOutOfRangeError_1 = __webpack_require__(402);
-	var EmptyObservable_1 = __webpack_require__(191);
+	var ArgumentOutOfRangeError_1 = __webpack_require__(405);
+	var EmptyObservable_1 = __webpack_require__(194);
 	/**
 	 * @throws {ArgumentOutOfRangeError} When using `takeLast(i)`, it delivers an
 	 * ArgumentOutOrRangeError to the Observer's `error` callback if `i < 0`.
@@ -11682,17 +11683,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=takeLast.js.map
 
 /***/ },
-/* 405 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var takeUntil_1 = __webpack_require__(406);
+	var takeUntil_1 = __webpack_require__(409);
 	Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 	//# sourceMappingURL=takeUntil.js.map
 
 /***/ },
-/* 406 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11701,8 +11702,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * @param notifier
 	 * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}
@@ -11745,17 +11746,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=takeUntil.js.map
 
 /***/ },
-/* 407 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var takeWhile_1 = __webpack_require__(408);
+	var takeWhile_1 = __webpack_require__(411);
 	Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
 	//# sourceMappingURL=takeWhile.js.map
 
 /***/ },
-/* 408 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11822,17 +11823,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=takeWhile.js.map
 
 /***/ },
-/* 409 */
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var throttle_1 = __webpack_require__(410);
+	var throttle_1 = __webpack_require__(413);
 	Observable_1.Observable.prototype.throttle = throttle_1.throttle;
 	//# sourceMappingURL=throttle.js.map
 
 /***/ },
-/* 410 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11841,8 +11842,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * @param durationSelector
 	 * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}
@@ -11913,17 +11914,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=throttle.js.map
 
 /***/ },
-/* 411 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var throttleTime_1 = __webpack_require__(412);
+	var throttleTime_1 = __webpack_require__(415);
 	Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 	//# sourceMappingURL=throttleTime.js.map
 
 /***/ },
-/* 412 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11933,7 +11934,7 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(41);
-	var async_1 = __webpack_require__(229);
+	var async_1 = __webpack_require__(232);
 	/**
 	 * @param delay
 	 * @param scheduler
@@ -11991,17 +11992,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=throttleTime.js.map
 
 /***/ },
-/* 413 */
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var timeout_1 = __webpack_require__(414);
+	var timeout_1 = __webpack_require__(417);
 	Observable_1.Observable.prototype.timeout = timeout_1.timeout;
 	//# sourceMappingURL=timeout.js.map
 
 /***/ },
-/* 414 */
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12010,8 +12011,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var async_1 = __webpack_require__(229);
-	var isDate_1 = __webpack_require__(254);
+	var async_1 = __webpack_require__(232);
+	var isDate_1 = __webpack_require__(257);
 	var Subscriber_1 = __webpack_require__(41);
 	/**
 	 * @param due
@@ -12108,17 +12109,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=timeout.js.map
 
 /***/ },
-/* 415 */
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var timeoutWith_1 = __webpack_require__(416);
+	var timeoutWith_1 = __webpack_require__(419);
 	Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 	//# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
-/* 416 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12127,10 +12128,10 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var async_1 = __webpack_require__(229);
-	var isDate_1 = __webpack_require__(254);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var async_1 = __webpack_require__(232);
+	var isDate_1 = __webpack_require__(257);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * @param due
 	 * @param withObservable
@@ -12233,17 +12234,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
-/* 417 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var toArray_1 = __webpack_require__(418);
+	var toArray_1 = __webpack_require__(421);
 	Observable_1.Observable.prototype.toArray = toArray_1.toArray;
 	//# sourceMappingURL=toArray.js.map
 
 /***/ },
-/* 418 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12293,7 +12294,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=toArray.js.map
 
 /***/ },
-/* 419 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12303,17 +12304,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=toPromise.js.map
 
 /***/ },
-/* 420 */
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var window_1 = __webpack_require__(421);
+	var window_1 = __webpack_require__(424);
 	Observable_1.Observable.prototype.window = window_1.window;
 	//# sourceMappingURL=window.js.map
 
 /***/ },
-/* 421 */
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12323,8 +12324,8 @@ webpackJsonp([0],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subject_1 = __webpack_require__(35);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Branch out the source Observable values as a nested Observable whenever
 	 * `windowBoundaries` emits.
@@ -12423,17 +12424,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=window.js.map
 
 /***/ },
-/* 422 */
+/* 425 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var windowCount_1 = __webpack_require__(423);
+	var windowCount_1 = __webpack_require__(426);
 	Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
 	//# sourceMappingURL=windowCount.js.map
 
 /***/ },
-/* 423 */
+/* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12564,17 +12565,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=windowCount.js.map
 
 /***/ },
-/* 424 */
+/* 427 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var windowTime_1 = __webpack_require__(425);
+	var windowTime_1 = __webpack_require__(428);
 	Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
 	//# sourceMappingURL=windowTime.js.map
 
 /***/ },
-/* 425 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12585,7 +12586,7 @@ webpackJsonp([0],[
 	};
 	var Subscriber_1 = __webpack_require__(41);
 	var Subject_1 = __webpack_require__(35);
-	var async_1 = __webpack_require__(229);
+	var async_1 = __webpack_require__(232);
 	/**
 	 * Branch out the source Observable values as a nested Observable periodically
 	 * in time.
@@ -12749,17 +12750,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=windowTime.js.map
 
 /***/ },
-/* 426 */
+/* 429 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var windowToggle_1 = __webpack_require__(427);
+	var windowToggle_1 = __webpack_require__(430);
 	Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
 	//# sourceMappingURL=windowToggle.js.map
 
 /***/ },
-/* 427 */
+/* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12772,8 +12773,8 @@ webpackJsonp([0],[
 	var Subscription_1 = __webpack_require__(43);
 	var tryCatch_1 = __webpack_require__(46);
 	var errorObject_1 = __webpack_require__(47);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Branch out the source Observable values as a nested Observable starting from
 	 * an emission from `openings` and ending when the output of `closingSelector`
@@ -12944,17 +12945,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=windowToggle.js.map
 
 /***/ },
-/* 428 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var windowWhen_1 = __webpack_require__(429);
+	var windowWhen_1 = __webpack_require__(432);
 	Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
 	//# sourceMappingURL=windowWhen.js.map
 
 /***/ },
-/* 429 */
+/* 432 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12966,8 +12967,8 @@ webpackJsonp([0],[
 	var Subject_1 = __webpack_require__(35);
 	var tryCatch_1 = __webpack_require__(46);
 	var errorObject_1 = __webpack_require__(47);
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Branch out the source Observable values as a nested Observable using a
 	 * factory function of closing Observables to determine when to start a new
@@ -13087,17 +13088,17 @@ webpackJsonp([0],[
 	//# sourceMappingURL=windowWhen.js.map
 
 /***/ },
-/* 430 */
+/* 433 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var withLatestFrom_1 = __webpack_require__(431);
+	var withLatestFrom_1 = __webpack_require__(434);
 	Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
 	//# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
-/* 431 */
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13106,8 +13107,8 @@ webpackJsonp([0],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(193);
-	var subscribeToResult_1 = __webpack_require__(194);
+	var OuterSubscriber_1 = __webpack_require__(196);
+	var subscribeToResult_1 = __webpack_require__(197);
 	/**
 	 * Combines the source Observable with other Observables to create an Observable
 	 * whose values are calculated from the latest values of each, only when the
@@ -13232,31 +13233,31 @@ webpackJsonp([0],[
 	//# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
-/* 432 */
+/* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var zip_1 = __webpack_require__(257);
+	var zip_1 = __webpack_require__(260);
 	Observable_1.Observable.prototype.zip = zip_1.zipProto;
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 433 */
+/* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(36);
-	var zipAll_1 = __webpack_require__(434);
+	var zipAll_1 = __webpack_require__(437);
 	Observable_1.Observable.prototype.zipAll = zipAll_1.zipAll;
 	//# sourceMappingURL=zipAll.js.map
 
 /***/ },
-/* 434 */
+/* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var zip_1 = __webpack_require__(257);
+	var zip_1 = __webpack_require__(260);
 	/**
 	 * @param project
 	 * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}
@@ -13270,7 +13271,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=zipAll.js.map
 
 /***/ },
-/* 435 */
+/* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13287,7 +13288,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=Operator.js.map
 
 /***/ },
-/* 436 */
+/* 439 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13305,7 +13306,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 437 */
+/* 440 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13333,19 +13334,19 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 438 */
+/* 441 */
 /***/ function(module, exports) {
 
-	module.exports = "@font-face {\n  font-family: 'FontAwesome';\n  src: url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.eot\");\n  src: url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.eot?#iefix\") format('embedded-opentype'), url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.woff2\") format('woff2'), url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.woff\") format('woff'), url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.ttf\") format('truetype'), url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.svg#bariolthin\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n.node-menu {\n  position: relative;\n  width: 150px;\n}\n.node-menu .node-menu-content {\n  width: 100%;\n  padding: 5px;\n  position: absolute;\n  border: 1px solid #bdbdbd;\n  border-radius: 5%;\n  box-shadow: 0 0 5px #bdbdbd;\n  background-color: #eee;\n  color: #212121;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}\n.node-menu .node-menu-content li.node-menu-item {\n  list-style: none;\n  padding: 3px;\n}\n.node-menu .node-menu-content .node-menu-item:hover {\n  border-radius: 5%;\n  opacity: unset;\n  cursor: pointer;\n  background-color: #bdbdbd;\n  transition: background-color 0.2s ease-out;\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-icon {\n  display: inline-block;\n  width: 16px;\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.new-tag:before {\n  content: '\\F02B';\n  font-family: 'FontAwesome';\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.new-folder:before {\n  content: '\\F114';\n  font-family: 'FontAwesome';\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.rename:before {\n  content: '\\F040';\n  font-family: 'FontAwesome';\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.remove:before {\n  content: '\\F00D';\n  font-family: 'FontAwesome';\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-value {\n  margin-left: 5px;\n}\n"
+	module.exports = ".node-menu {\n  position: relative;\n  width: 150px;\n}\n.node-menu .node-menu-content {\n  width: 100%;\n  padding: 5px;\n  position: absolute;\n  border: 1px solid #bdbdbd;\n  border-radius: 5%;\n  box-shadow: 0 0 5px #bdbdbd;\n  background-color: #eee;\n  color: #212121;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}\n.node-menu .node-menu-content li.node-menu-item {\n  list-style: none;\n  padding: 3px;\n}\n.node-menu .node-menu-content .node-menu-item:hover {\n  border-radius: 5%;\n  opacity: unset;\n  cursor: pointer;\n  background-color: #bdbdbd;\n  transition: background-color 0.2s ease-out;\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-icon {\n  display: inline-block;\n  width: 16px;\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.new-tag:before {\n  content: '\\25CF';\n  font-family: primary-icons-font-family;\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.new-folder:before {\n  content: '\\25B6';\n  font-family: primary-icons-font-family;\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.rename:before {\n  content: '\\270E';\n  font-family: primary-icons-font-family;\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-icon.remove:before {\n  content: '\\2716';\n  font-family: primary-icons-font-family;\n}\n.node-menu .node-menu-content .node-menu-item .node-menu-item-value {\n  margin-left: 5px;\n}\n"
 
 /***/ },
-/* 439 */
+/* 442 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"node-menu\">\n  <ul class=\"node-menu-content\">\n    <li class=\"node-menu-item\" *ngFor=\"let menuItem of availableMenuItems\"\n        (click)=\"onMenuItemSelected($event, menuItem)\">\n      <div class=\"node-menu-item-icon {{menuItem.cssClass}}\"></div>\n      <span class=\"node-menu-item-value\">{{menuItem.name}}</span>\n    </li>\n  </ul>\n</div>\n"
 
 /***/ },
-/* 440 */
+/* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13359,7 +13360,7 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var Rx_1 = __webpack_require__(179);
+	var Rx_1 = __webpack_require__(182);
 	var NodeDraggableService = (function () {
 	    function NodeDraggableService() {
 	        this.draggableNodeEvents$ = new Rx_1.Subject();
@@ -13383,7 +13384,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 441 */
+/* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13400,8 +13401,8 @@ webpackJsonp([0],[
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
-	var node_draggable_service_1 = __webpack_require__(440);
-	var captured_node_1 = __webpack_require__(442);
+	var node_draggable_service_1 = __webpack_require__(443);
+	var captured_node_1 = __webpack_require__(445);
 	var NodeDraggableDirective = (function () {
 	    function NodeDraggableDirective(element, nodeDraggableService, renderer) {
 	        this.element = element;
@@ -13505,7 +13506,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 442 */
+/* 445 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13543,7 +13544,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 443 */
+/* 446 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13554,7 +13555,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 444 */
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13567,7 +13568,7 @@ webpackJsonp([0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var Rx_1 = __webpack_require__(179);
+	var Rx_1 = __webpack_require__(182);
 	var core_1 = __webpack_require__(3);
 	var BranchyService = (function () {
 	    function BranchyService() {
@@ -13587,12 +13588,12 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 445 */,
-/* 446 */
+/* 448 */,
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var _ = __webpack_require__(447);
+	var _ = __webpack_require__(450);
 	function applyNewValueToRenamable(value, newValue) {
 	    var renamableValue = _.merge({}, value);
 	    renamableValue.setName(newValue);
@@ -13610,25 +13611,25 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 447 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(445);
+	module.exports = __webpack_require__(448);
 
 /***/ },
-/* 448 */
+/* 451 */
 /***/ function(module, exports) {
 
-	module.exports = "@font-face {\n  font-family: 'FontAwesome';\n  src: url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.eot\");\n  src: url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.eot?#iefix\") format('embedded-opentype'), url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.woff2\") format('woff2'), url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.woff\") format('woff'), url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.ttf\") format('truetype'), url(\"/node_modules/font-awesome/fonts/fontawesome-webfont.svg#bariolthin\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\nul {\n  padding: 3px 0 3px 25px;\n}\nli {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n}\n.over-drop-target {\n  border: 4px solid #757575;\n  transition: padding 0.2s ease-out;\n  padding: 5px;\n  border-radius: 5%;\n}\n.tree {\n  box-sizing: border-box;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}\n.tree li {\n  list-style: none;\n  cursor: default;\n}\n.tree li div {\n  display: inline-block;\n  box-sizing: border-box;\n}\n.tree .node-value {\n  display: inline-block;\n  color: #212121;\n}\n.tree .node-value:after {\n  display: block;\n  padding-top: -3px;\n  width: 0;\n  height: 2px;\n  background-color: #212121;\n  content: '';\n  transition: width 0.3s;\n}\n.tree .node-value:hover:after {\n  width: 100%;\n}\n.tree .node-selected:after {\n  width: 100%;\n}\n.tree .folding {\n  width: 25px;\n  display: inline-block;\n  padding: 0 5px;\n  font-weight: bold;\n}\n.tree .folding.node-collapsed {\n  cursor: pointer;\n}\n.tree .folding.node-collapsed:before {\n  content: '\\F114';\n  color: #757575;\n  font-family: 'FontAwesome';\n}\n.tree .folding.node-expanded {\n  cursor: pointer;\n}\n.tree .folding.node-expanded:before {\n  content: '\\F115';\n  color: #757575;\n  font-family: 'FontAwesome';\n}\n.tree .folding.node-leaf {\n  color: #212121;\n  vertical-align: top;\n  font-size: 13px;\n}\n.tree .folding.node-leaf:before {\n  content: '\\F02B';\n  color: #757575;\n  font-family: 'FontAwesome';\n}\n"
+	module.exports = "ul {\n  padding: 3px 0 3px 25px;\n}\nli {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n}\n.over-drop-target {\n  border: 4px solid #757575;\n  transition: padding 0.2s ease-out;\n  padding: 5px;\n  border-radius: 5%;\n}\n.tree {\n  box-sizing: border-box;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}\n.tree li {\n  list-style: none;\n  cursor: default;\n}\n.tree li div {\n  display: inline-block;\n  box-sizing: border-box;\n}\n.tree .node-value {\n  display: inline-block;\n  color: #212121;\n}\n.tree .node-value:after {\n  display: block;\n  padding-top: -3px;\n  width: 0;\n  height: 2px;\n  background-color: #212121;\n  content: '';\n  transition: width 0.3s;\n}\n.tree .node-value:hover:after {\n  width: 100%;\n}\n.tree .node-selected:after {\n  width: 100%;\n}\n.tree .folding {\n  width: 25px;\n  display: inline-block;\n  line-height: 1px;\n  padding: 0 5px;\n  font-weight: bold;\n}\n.tree .folding.node-collapsed {\n  cursor: pointer;\n}\n.tree .folding.node-collapsed:before {\n  content: '\\25B6';\n  color: #757575;\n}\n.tree .folding.node-expanded {\n  cursor: pointer;\n}\n.tree .folding.node-expanded:before {\n  content: '\\25BC';\n  color: #757575;\n}\n.tree .folding.node-leaf {\n  color: #212121;\n  text-align: center;\n  font-size: 0.89em;\n}\n.tree .folding.node-leaf:before {\n  content: '\\25CF';\n  color: #757575;\n}\n"
 
 /***/ },
-/* 449 */
+/* 452 */
 /***/ function(module, exports) {
 
 	module.exports = "<ul class=\"tree\" *ngIf=\"tree\">\n  <li>\n    <div (contextmenu)=\"showMenu($event)\" [nodeDraggable]=\"element\" [tree]=\"tree\">\n      <div class=\"folding\" (click)=\"switchFoldingType($event, tree)\" [ngClass]=\"getFoldingTypeCssClass(tree)\"></div>\n      <div href=\"#\" class=\"node-value\" *ngIf=\"!isEditInProgress()\" [class.node-selected]=\"isSelected\" (click)=\"onNodeSelected($event)\">{{tree.value}}</div>\n\n      <input type=\"text\" class=\"node-value\" *ngIf=\"isEditInProgress()\"\n             [nodeEditable]=\"tree.value\"\n             (valueChanged)=\"applyNewValue($event, tree)\"/>\n    </div>\n\n    <node-menu *ngIf=\"isMenuVisible\" (menuItemSelected)=\"onMenuItemSelected($event)\"></node-menu>\n\n    <template [ngIf]=\"isNodeExpanded()\">\n      <tree *ngFor=\"let child of tree.children; let position = index\"\n            [parentTree]=\"tree\"\n            [indexInParent]=\"position\"\n            [tree]=\"child\"\n            (nodeRemoved)=\"onChildRemoved($event)\"></tree>\n    </template>\n  </li>\n</ul>\n"
 
 /***/ },
-/* 450 */
+/* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13641,7 +13642,7 @@ webpackJsonp([0],[
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var platform_browser_dynamic_1 = __webpack_require__(451);
+	var platform_browser_dynamic_1 = __webpack_require__(454);
 	var core_1 = __webpack_require__(3);
 	var index_1 = __webpack_require__(1);
 	var AppComponent = (function () {
@@ -13754,7 +13755,7 @@ webpackJsonp([0],[
 	        core_1.Component({
 	            selector: 'app',
 	            template: "\n    <div class=\"branchy-demo-app\">\n      <div class=\"branchy-container\">\n        <p>Branchy fonts</p>\n        <branchy\n          [tree]=\"fonts\" \n          (nodeRemoved)=\"onNodeRemoved($event)\"\n          (nodeRenamed)=\"onNodeRenamed($event)\"\n          (nodeSelected)=\"onNodeSelected($event)\"\n          (nodeMoved)=\"onNodeMoved($event)\"\n          (nodeCreated)=\"onNodeCreated($event)\">\n        </branchy>\n      </div>\n      <div class=\"branchy-container\">\n        <p>Branchy programming languages</p>\n        <branchy \n          [tree]=\"pls\" \n          (nodeRemoved)=\"onNodeRemoved($event)\"\n          (nodeRenamed)=\"onNodeRenamed($event)\"\n          (nodeSelected)=\"onNodeSelected($event)\"\n          (nodeMoved)=\"onNodeMoved($event)\"\n          (nodeCreated)=\"onNodeCreated($event)\">\n        </branchy>\n      </div>\n    </div>\n    ",
-	            styles: [__webpack_require__(604)],
+	            styles: [__webpack_require__(607)],
 	            directives: [index_1.BranchyComponent]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -13765,9 +13766,6 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 451 */,
-/* 452 */,
-/* 453 */,
 /* 454 */,
 /* 455 */,
 /* 456 */,
@@ -13918,7 +13916,10 @@ webpackJsonp([0],[
 /* 601 */,
 /* 602 */,
 /* 603 */,
-/* 604 */
+/* 604 */,
+/* 605 */,
+/* 606 */,
+/* 607 */
 /***/ function(module, exports) {
 
 	module.exports = ".branchy-demo-app {\n  margin: auto;\n  width: -moz-fit-content;\n  width: -webkit-fit-content;\n  width: fit-content;\n}\n.branchy-demo-app .branchy-container {\n  float: left;\n  vertical-align: top;\n  width: 500px;\n}\n.branchy-demo-app .branchy-container p {\n  color: #40a070;\n  font-size: 2em;\n}\n"
