@@ -1,5 +1,7 @@
 # :herb: ng2-branchy
 
+## Hello guys! This project has moved to https://github.com/valor-software/ng2-tree and got new name: `ng2-tree`. Thanks and see you there :)
+
 ng2-branchy is a simple [Angular 2](https://github.com/angular/angular) component for visualizing data that can be naturally represented as a tree.
 
 ## :clapper: Usage
